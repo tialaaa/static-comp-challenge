@@ -11,7 +11,7 @@
     <nav>
       <section class="nav-user">
         <img>
-        <p>User's name</p>
+        <h5>User's name</h5>
       </section>
       <section class="nav-primary">
         <h6>Main</h6>
@@ -50,53 +50,61 @@
       </section>
     </nav>
     <main>
-      <header>
-        <section class="header-search">
-          <!-- icon -->
-          <div>
-            <!-- search icon -->
-            <form role="search">
-              <input type="search" id="site-search" name="q"
-                placeholder="Search for a ...."
-                aria-label="Search through site content">
-            </form>
-          </div>
-          <!-- icon, icon, icon -->
-        </section>
-        <section class="header-nav">
-          <hgroup>
-            <h1>Biggest Header</h1>
-            <p>Subheader</p>
-            <!-- link -->
-          </hgroup>
-          <div>
-            <!-- icon list -->
-          </div>
-          <menu>
-            <!-- main page nav list -->
-          </menu>
-        </section>
+      <header class="search-bar">
+        <!-- icon -->
+        <div class="search-container">
+          <!-- search icon -->
+          <form role="search">
+            <input type="search" id="site-search" name="q"
+              placeholder="Search for a ...."
+              aria-label="Search through site content">
+          </form>
+        </div>
+        <!-- icon, icon, icon -->
       </header>
-      <section class="main">
-        <section class="main-top-container">
-          <section class="charts-left">
+      <header class="main-nav-container">
+        <hgroup>
+          <h1>Biggest Header</h1>
+          <p>Subheader</p>
+          <a href="https://google.com">Placeholder link text</a>
+        </hgroup>
+        <div class="main-nav-quick-icons">
+          <button>Icon buttons - add imgs</button>
+          <button>Icon buttons - add imgs</button>
+          <button>Icon buttons - add imgs</button>
+          <button>Icon buttons - add imgs</button>
+        </div>
+        <menu class="main-nav-menu">
+          <li><button id="aButton">Some nav button</button></li>
+          <li><button id="aButton">Some nav button</button></li>
+          <li><button id="aButton">Some nav button</button></li>
+          <li><button id="aButton">Some nav button</button></li>
+          <li><button id="aButton">Some nav button</button></li>
+          <li><button id="aButton">Some nav button</button></li>
+          <li><button id="aButton">Some nav button</button></li>
+        </menu>
+      </header>
+      <div class="main-body-container">
+        <div class="main-body-top">
+          <div class="charts-left">
             <div>
               <!-- chart1 -->
               <!-- chart2 -->
               <!-- chart3 -->
             </div>
             <button>Left</button>
-          </section>
-          <section class="charts-right">
+          </div>
+          <div class="charts-right">
             <!-- chart4 -->
             <button>Right</button>
-          </section>
-        </section>
+          </div>
+        </div>
         <hr>
-        <section class="main-bottom-container">
-
-        </section>
-      </section>
+        <div class="main-body-bottom">
+          <section>Left area for main info</section>
+          <div>Right area for buttons and links</div>
+        </div>
+      </div>
     </main>
   </body>
 </html>
