@@ -3,14 +3,6 @@
   border: 1px solid green;
 }
 
-.material-symbols-rounded {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 48
-}
-
 body,
 nav,
 main {
@@ -23,8 +15,6 @@ body {
 }
 
 main {
-  /* display: flex; */
-  width: 100%;
   margin-left: 12rem;
 }
 
@@ -49,15 +39,50 @@ nav {
   height: 10rem;
 }
 
-.nav-primary {
+.nav-primary,
+.nav-secondary {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   height: 15rem;
 }
 
-nav h5,
-nav menu,
-nav div {
+.nav-secondary {
+  height: 13rem;
+}
+
+nav h5 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-left: 20px;
+  padding-left: 1rem;
+  /* adjust margin after choosing font */
+}
+
+.material-symbols-rounded {
+  font-size: 1.25rem;
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 20
+}
+
+nav i {
+  padding-right: 1rem;
+}
+
+nav button {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0.4rem 0 0.4rem 1rem;
+  border: 0px;
+  background-color: grey;
+}
+
+nav button:hover {
+  background-color: darkgrey;
+  border-left: 3px solid cyan;
+  font-weight: bold;
 }
