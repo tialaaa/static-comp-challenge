@@ -1,0 +1,43 @@
+* {
+  /* font-family: ; */
+  border: 1px solid green;
+}
+
+body,
+nav,
+main {
+  display: flex;
+  height: 100vh;
+}
+
+body {
+  width: 100vw;
+  margin: 0;
+}
+
+main {
+  width: 100%;
+}
+
+nav {
+  flex-direction: column;
+  width: 12rem;
+  background-color: grey;
+}
+
+.nav-user {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 10rem;
+}
+
+.nav-primary {
+  height: 15rem;
+}
+
+nav h6,
+nav menu {
+  padding-left: 20px;
+}
