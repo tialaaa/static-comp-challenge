@@ -31,7 +31,7 @@ nav {
   background-color: grey;
 }
 
-.nav-user {
+.nav-user-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -39,15 +39,15 @@ nav {
   height: 10rem;
 }
 
-.nav-primary,
-.nav-secondary {
+.nav-primary-container,
+.nav-secondary-container {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   height: 15rem;
 }
 
-.nav-secondary {
+.nav-secondary-container {
   height: 13rem;
 }
 
@@ -85,4 +85,41 @@ nav button:hover {
   background-color: darkgrey;
   border-left: 3px solid cyan;
   font-weight: bold;
+  cursor: pointer;
+}
+
+nav button.active {
+  background-color: dimgrey;
+  border-left: 3px solid cyan;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.search-container,
+.search-icons,
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-container {
+  justify-content: space-between;
+  height: 6rem;
+  background-color: darkgray;
+}
+
+.search-icons {
+  justify-content: center;
+  width: 6rem;
+  height: 100%;
+}
+
+.search-icons:hover {
+  background-color: cyan;
+  cursor: pointer;
+}
+
+.search-bar {
+  width: 70%;
+  height: 100%;
 }
