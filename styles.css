@@ -123,3 +123,43 @@ nav button.active {
   width: 70%;
   height: 100%;
 }
+
+.main-nav-container,
+.main-body-container {
+  margin: 3rem;
+}
+
+.main-body-top {
+  margin-bottom: 3rem;
+}
+
+.main-body-bottom {
+  margin-top: 3rem;
+}
+
+/* add MAIN-NAV-CONTAINER styles */
+
+.main-body-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.charts-left,
+.charts-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.charts-left {
+  width: 60%
+}
+
+.charts-right {
+  width: 40%
+}
+
+.charts-left > div {
+  display: flex;
+  justify-content: space-around;
+}
