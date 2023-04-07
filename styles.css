@@ -1,6 +1,6 @@
 * {
   font-family: 'Noto Sans', sans-serif;
-  border: 1px solid green;
+  /* border: 1px solid green; */
 }
 
 body,
@@ -16,6 +16,15 @@ body {
 
 main {
   margin-left: 12rem;
+}
+
+p,
+h1 {
+  margin: 0;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 nav {
@@ -81,18 +90,15 @@ nav button {
   background-color: grey;
 }
 
-nav button:hover {
+nav button:hover, 
+nav button.active {
   background-color: darkgrey;
-  border-left: 3px solid cyan;
-  font-weight: bold;
-  cursor: pointer;
+  border-left: 2px solid cyan;
+  padding: 0.4rem 0 0.4rem 0.88rem;
 }
 
 nav button.active {
   background-color: dimgrey;
-  border-left: 3px solid cyan;
-  font-weight: bold;
-  cursor: pointer;
 }
 
 .search-container,
@@ -124,7 +130,6 @@ nav button.active {
   height: 100%;
 }
 
-.main-nav-container,
 .main-body-container {
   margin: 3rem;
 }
@@ -137,11 +142,79 @@ nav button.active {
   margin-top: 3rem;
 }
 
-/* add MAIN-NAV-CONTAINER styles */
+.main-nav-container {
+  padding: 3rem;
+  padding-bottom: 0;
+  border-bottom: 1px solid grey;
+}
+
+.main-nav-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 9rem;
+}
+
+.main-nav-top-row {
+  display: flex;
+}
+
+hgroup {
+  width: 75%;
+}
+
+hgroup > div {
+  display: flex;
+}
+
+.subheader-container {
+  display: flex;
+  align-items: center;
+  height: 2.5rem;
+}
+
+.subheader {
+  margin: 0 0.5rem 0 0;
+}
+.main-link {
+  margin: 0 0 0 0.5rem;
+}
+
+.main-nav-quick-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 25%;
+}
+
+.main-nav-quick-icons > button {
+  height: 1.5rem;
+}
+
+/* add sizing for icon-wide and icon-circle classes */
+
+.main-nav-tabs > button {
+  /* min-width: 6rem; */
+  /* test actual text with and without min-width */
+  height: 3rem;
+  border: 0;
+  padding: 0 0.5px;
+  margin-right: 1rem;
+  background-color: white;
+}
+
+.main-nav-tabs > button:hover {
+  background-color: cyan;
+}
+
+.main-nav-tabs > .default-tab {
+  border-bottom: 3px solid cyan;
+}
 
 .main-body-top {
   display: flex;
   justify-content: space-between;
+  height: 16rem;
 }
 
 .charts-left,
@@ -156,10 +229,20 @@ nav button.active {
 }
 
 .charts-right {
+  align-items: center;
   width: 40%
 }
 
 .charts-left > div {
   display: flex;
   justify-content: space-around;
+}
+
+.charts-left button {
+  width: 35%;
+  margin: 0 auto;
+}
+
+.charts-right button {
+  width: 35%;
 }
