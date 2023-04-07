@@ -10,11 +10,11 @@
   </head>
   <body>
     <nav>
-      <section class="nav-user">
+      <section class="nav-user-container">
         <img alt="user img">
         <h4>User's name</h4>
       </section>
-      <section class="nav-primary">
+      <section class="nav-primary-container">
         <h5>Main</h5>
         <div>
           <button><i class="material-symbols-rounded">home</i>Home</button>
@@ -24,20 +24,19 @@
           <button><i class="material-symbols-rounded">eco</i>Something</button>
         </div>
       </section>
-      <section class="nav-primary">
+      <section class="nav-primary-container">
         <h5>Admin</h5>
         <div>
           <button><i class="material-symbols-rounded">my_location</i>Other</button>
           <button><i class="material-symbols-rounded">near_me</i>Things</button>
           <button><i class="material-symbols-rounded">directions_car</i>Will</button>
-          <button><i class="material-symbols-rounded">waves</i>Be Put</button>
+          <button class="active"><i class="material-symbols-rounded">waves</i>Be Put</button>
           <button><i class="material-symbols-rounded">sleep</i>Here</button>
         </div>
       </section>
-      <section class="nav-secondary">
+      <section class="nav-secondary-container">
         <h5>Categories</h5>
         <div>
-          <!-- checkboxes instead of buttons? -->
           <button><i class="material-symbols-rounded">check_box</i>More</button>
           <button><i class="material-symbols-rounded">check_box_outline_blank</i>Other</button>
           <button><i class="material-symbols-rounded">check_box_outline_blank</i>Things</button>
@@ -46,9 +45,9 @@
       </section>
     </nav>
     <main>
-      <header class="search-bar">
-        <div>Icon</div>
-        <div class="search-container">
+      <header class="search-container">
+        <div class="search-icons">Icon</div>
+        <div class="search-bar">
           <div>Search Icon</div>
           <form role="search">
             <input type="search" id="site-search" name="q"
@@ -56,9 +55,9 @@
               aria-label="Search through site content">
           </form>
         </div>
-        <div>Icon</div>
-        <div>Icon</div>
-        <div>Icon</div>
+        <div class="search-icons">Icon</div>
+        <div class="search-icons">Icon</div>
+        <div class="search-icons">Icon</div>
       </header>
       <header class="main-nav-container">
         <hgroup>
