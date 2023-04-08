@@ -1,14 +1,21 @@
+/* GENERAL STYLES AND LAYOUT */
+
 * {
   font-family: 'Noto Sans', sans-serif;
   /* border: 1px solid green; */
 }
 
-body {
+body,
+.main-nav-top-row,
+hgroup > div {
   display: flex;
   margin: 0;
 }
 
-main {
+main,
+.main-left,
+.links-container,
+.copy-fields {
   flex: 1;
 }
 
@@ -22,6 +29,15 @@ button:hover {
   cursor: pointer;
 }
 
+.material-symbols-rounded {
+  font-size: 1.25rem;
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 20
+}
+
 nav, 
 nav h5,
 .nav-user-container,
@@ -29,7 +45,11 @@ nav h5,
 .nav-secondary-container,
 .main-nav-header,
 .charts-left,
-.charts-right {
+.charts-right,
+.main-right,
+.socials-container,
+.links-container,
+.links-content {
   display: flex;
   flex-direction: column;
 }
@@ -41,7 +61,9 @@ nav button,
 .search-bar,
 .subheader-container,
 .main-nav-quick-icons,
-.charts-right {
+.charts-right,
+.p-filler-share-cont,
+.divider-body {
   display: flex;
   align-items: center;
 }
@@ -49,10 +71,16 @@ nav button,
 .search-container,
 .main-nav-header,
 .main-nav-quick-icons,
-.main-body-top {
+.main-body-top,
+.main-body-bottom,
+.socials-container,
+.links-container,
+.divider-body {
   display: flex;
   justify-content: space-between;
 }
+
+/* NAVIGATION MENU (LEFT) STYLES */
 
 nav {
   flex: 0 0 12rem;
@@ -85,22 +113,13 @@ nav h5 {
   /* adjust margin after choosing font */
 }
 
-.material-symbols-rounded {
-  font-size: 1.25rem;
-  font-variation-settings:
-  'FILL' 1,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 20
-}
-
 nav i {
   padding-right: 1rem;
 }
 
 nav button {
   width: 100%;
-  padding: 0.4rem 0 0.4rem 1rem;
+  padding: 0.5rem 0 0.5rem 1rem;
   border: 0px;
   background-color: grey;
 }
@@ -115,6 +134,8 @@ nav button.active {
 nav button.active {
   background-color: dimgrey;
 }
+
+/* SEARCH BAR STYLES */
 
 .search-container {
   height: 5rem;
@@ -137,17 +158,7 @@ nav button.active {
   height: 100%;
 }
 
-.main-body-container {
-  margin: 3rem;
-}
-
-.main-body-top {
-  margin-bottom: 3rem;
-}
-
-.main-body-bottom {
-  margin-top: 3rem;
-}
+/* MAIN PAGE NAV HEADER STYLES */
 
 .main-nav-container {
   padding: 3rem;
@@ -159,16 +170,8 @@ nav button.active {
   height: 9rem;
 }
 
-.main-nav-top-row {
-  display: flex;
-}
-
 hgroup {
   width: 75%;
-}
-
-hgroup > div {
-  display: flex;
 }
 
 .subheader-container {
@@ -178,6 +181,7 @@ hgroup > div {
 .subheader {
   margin: 0 0.5rem 0 0;
 }
+
 .main-link {
   margin: 0 0 0 0.5rem;
 }
@@ -210,9 +214,35 @@ hgroup > div {
   border-bottom: 3px solid cyan;
 }
 
+/* MAIN BODY GENERAL STYLES */
+
+.main-body-container {
+  border: 3rem solid blanchedalmond;
+  background-color: blanchedalmond;
+}
+
 .main-body-top {
   height: 16rem;
+  margin-bottom: 3rem;
 }
+
+.main-body-bottom {
+  margin-top: 3rem;
+}
+
+.main-right {
+  width: 25%;
+  margin-left: 3rem;
+}
+
+.info-card {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 0.25rem;
+  border-spacing: 0;
+}
+
+/* CHART CONTAINER STYLES */
 
 .charts-left,
 .charts-right {
@@ -242,9 +272,6 @@ hgroup > div {
 }
 
 .divider-body {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   height: 0;
 }
 
@@ -265,26 +292,9 @@ hgroup > div {
   line-height: normal;
 }
 
-.main-body-bottom {
-  display: flex;
-  justify-content: space-between;
-}
-
-.main-left {
-  flex: 1;
-}
-
-.main-right {
-  display: flex;
-  flex-direction: column;
-  width: 25%;
-  margin-left: 3rem;
-}
+/* SHARING CONTAINER STYLES */
 
 .socials-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   height: 25%;
   text-align: center;
 }
@@ -299,6 +309,7 @@ hgroup > div {
   position: relative;
   width: 100%;
   height: 3rem;
+  margin-bottom: 0.7rem;
   color: white;
   background-color: dimgrey;
   text-decoration: none;
@@ -314,16 +325,13 @@ hgroup > div {
 }
 
 .links-container,
-.links-content {
-  display: flex;
-  flex-direction: column;
+.links-content,
+th {
   text-align: start;
 }
 
 .links-container {
-  justify-content: space-between;
-  flex: 1;
-  margin-top: 2rem;
+  margin-top: 1.25rem;
 }
 
 .divider-share-cont {
@@ -331,8 +339,6 @@ hgroup > div {
 }
 
 .p-filler-share-cont {
-  display: flex;
-  align-items: center;
   height: 3rem;
   padding: 1rem 0;
   font-size: small;
@@ -341,9 +347,27 @@ hgroup > div {
 .copy-row {
   display: flex;
   padding: 0.25rem 0;
-  /* need same ^padding on bottom of main-left */
 }
 
-.copy-field {
-  flex: 1;
+/* TABLE STYLES */
+
+tbody {
+  background-color: white;
+}
+
+th {
+  height: 4rem;
+  background-color: darkgrey;
+}
+
+td {
+  border-bottom: 1px solid grey;
+}
+
+.table-column-left {
+  padding-left: 1.5rem;
+}
+
+.table-bottom-row {
+  border-bottom: 0;
 }
