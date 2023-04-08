@@ -241,23 +241,23 @@ hgroup > div {
   width: 35%;
 }
 
-.hr-pagebreak {
+.divider-body {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 0;
 }
 
-.hr-line{
+.divider-line {
   width: 100%;
   border-bottom: 1px solid grey;
 }
 
-.hr-pagebreak > .left {
+.divider-body > .left {
   margin-right: 0.5rem;
 }
 
-.hr-pagebreak > .right {
+.divider-body > .right {
   margin-left: 0.5rem;
 }
 
@@ -326,11 +326,8 @@ hgroup > div {
   margin-top: 2rem;
 }
 
-.hr-share-cont {
-  width: 100%;
+.divider-share-cont {
   margin: 1.5rem 0;
-  border-bottom: 1px solid grey;
-  /* padding: 0.5rem 0; */
 }
 
 .p-filler-share-cont {
