@@ -235,3 +235,27 @@ hgroup > div {
 .charts-right button {
   width: 35%;
 }
+
+.hr-pagebreak {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 0;
+}
+
+.hr-line{
+  width: 100%;
+  border-bottom: 1px solid grey;
+}
+
+.hr-pagebreak > .left {
+  margin-right: 0.5rem;
+}
+
+.hr-pagebreak > .right {
+  margin-left: 0.5rem;
+}
+
+.center {
+  line-height: normal;
+}
