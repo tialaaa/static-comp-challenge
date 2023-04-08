@@ -13,7 +13,8 @@ main {
 }
 
 p,
-h1 {
+h1,
+h4 {
   margin: 0;
 }
 
@@ -195,9 +196,9 @@ hgroup > div {
   /* min-width: 6rem; */
   /* test actual text with and without min-width */
   height: 3rem;
+  margin-right: 1rem;
   border: 0;
   padding: 0 0.5px;
-  margin-right: 1rem;
   background-color: white;
 }
 
@@ -276,23 +277,18 @@ hgroup > div {
 .main-right {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   width: 25%;
   margin-left: 3rem;
+}
+
+.socials-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 25%;
   text-align: center;
 }
 
-.share-links-container {
-  height: 75%;
-}
-
-.main-right > button {
-  height: 3rem;
-  border: 0;
-  background-color: dimgrey;
-}
-
-.main-right > button:hover,
 .main-right .btn:hover {
   color: dimgrey;
   background-color: cyan;
@@ -301,6 +297,7 @@ hgroup > div {
 .main-right .btn {
   display: inline-block;
   position: relative;
+  width: 100%;
   height: 3rem;
   color: white;
   background-color: dimgrey;
@@ -314,4 +311,42 @@ hgroup > div {
   position: absolute;
   top: 1rem;
   left: 1rem;
+}
+
+.links-container,
+.links-content {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+
+.links-container {
+  justify-content: space-between;
+  flex: 1;
+  margin-top: 2rem;
+}
+
+.hr-share-cont {
+  width: 100%;
+  margin: 1.5rem 0;
+  border-bottom: 1px solid grey;
+  /* padding: 0.5rem 0; */
+}
+
+.p-filler-share-cont {
+  display: flex;
+  align-items: center;
+  height: 3rem;
+  padding: 1rem 0;
+  font-size: small;
+}
+
+.copy-row {
+  display: flex;
+  padding: 0.25rem 0;
+  /* need same ^padding on bottom of main-left */
+}
+
+.copy-field {
+  flex: 1;
 }
