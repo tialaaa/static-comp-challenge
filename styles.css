@@ -1,0 +1,378 @@
+/* GENERAL STYLES AND LAYOUT */
+
+* {
+  font-family: 'Noto Sans', sans-serif;
+  /* border: 1px solid green; */
+}
+
+body,
+.main-nav-top-row,
+hgroup > div {
+  display: flex;
+  margin: 0;
+}
+
+main,
+.main-left,
+.links-container,
+.copy-fields {
+  flex: 1;
+}
+
+p,
+h1,
+h4 {
+  margin: 0;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.material-symbols-rounded {
+  font-size: 1.25rem;
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 20
+}
+
+nav, 
+nav h5,
+.nav-user-container,
+.nav-primary-container,
+.nav-secondary-container,
+.main-nav-header,
+.charts-left,
+.charts-right,
+.main-right,
+.socials-container,
+.links-container,
+.links-content {
+  display: flex;
+  flex-direction: column;
+}
+
+nav button,
+.nav-user-container,
+.search-container,
+.search-icons,
+.search-bar,
+.subheader-container,
+.main-nav-quick-icons,
+.charts-right,
+.p-filler-share-cont,
+.divider-body {
+  display: flex;
+  align-items: center;
+}
+
+.search-container,
+.main-nav-header,
+.main-nav-quick-icons,
+.main-body-top,
+.main-body-bottom,
+.socials-container,
+.links-container,
+.divider-body {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* NAVIGATION MENU (LEFT) STYLES */
+
+nav {
+  flex: 0 0 12rem;
+  padding-top: 1rem;
+  background-color: grey;
+}
+
+.nav-user-container {
+  justify-content: center;
+  height: 10rem;
+}
+
+.nav-user-container > img {
+  border-radius: 50%;
+}
+
+.nav-primary-container,
+.nav-secondary-container {
+  justify-content: space-evenly;
+  height: 15rem;
+}
+
+.nav-secondary-container {
+  height: 13rem;
+}
+
+nav h5 {
+  align-items: flex-start;
+  padding-left: 1rem;
+  /* adjust margin after choosing font */
+}
+
+nav i {
+  padding-right: 1rem;
+}
+
+nav button {
+  width: 100%;
+  padding: 0.5rem 0 0.5rem 1rem;
+  border: 0px;
+  background-color: grey;
+}
+
+nav button:hover, 
+nav button.active {
+  background-color: darkgrey;
+  border-left: 2px solid cyan;
+  padding: 0.4rem 0 0.4rem 0.88rem;
+}
+
+nav button.active {
+  background-color: dimgrey;
+}
+
+/* SEARCH BAR STYLES */
+
+.search-container {
+  height: 5rem;
+  background-color: darkgray;
+}
+
+.search-icons {
+  justify-content: center;
+  width: 6rem;
+  height: 100%;
+}
+
+.search-icons:hover {
+  background-color: cyan;
+  cursor: pointer;
+}
+
+.search-bar {
+  width: 70%;
+  height: 100%;
+}
+
+/* MAIN PAGE NAV HEADER STYLES */
+
+.main-nav-container {
+  padding: 3rem;
+  padding-bottom: 0;
+  border-bottom: 1px solid grey;
+}
+
+.main-nav-header {
+  height: 9rem;
+}
+
+hgroup {
+  width: 75%;
+}
+
+.subheader-container {
+  height: 2.5rem;
+}
+
+.subheader {
+  margin: 0 0.5rem 0 0;
+}
+
+.main-link {
+  margin: 0 0 0 0.5rem;
+}
+
+.main-nav-quick-icons {
+  width: 25%;
+}
+
+.main-nav-quick-icons > button {
+  height: 1.5rem;
+}
+
+/* add sizing for icon-wide and icon-circle classes */
+
+.main-nav-tabs > button {
+  /* min-width: 6rem; */
+  /* test actual text with and without min-width */
+  height: 3rem;
+  margin-right: 1rem;
+  border: 0;
+  padding: 0 0.5px;
+  background-color: white;
+}
+
+.main-nav-tabs > button:hover {
+  background-color: cyan;
+}
+
+.main-nav-tabs > .default-tab {
+  border-bottom: 3px solid cyan;
+}
+
+/* MAIN BODY GENERAL STYLES */
+
+.main-body-container {
+  border: 3rem solid blanchedalmond;
+  background-color: blanchedalmond;
+}
+
+.main-body-top {
+  height: 16rem;
+  margin-bottom: 3rem;
+}
+
+.main-body-bottom {
+  margin-top: 3rem;
+}
+
+.main-right {
+  width: 25%;
+  margin-left: 3rem;
+}
+
+.info-card {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 0.25rem;
+  border-spacing: 0;
+}
+
+/* CHART CONTAINER STYLES */
+
+.charts-left,
+.charts-right {
+  justify-content: center;
+}
+
+.charts-left {
+  width: 60%
+}
+
+.charts-right {
+  width: 40%
+}
+
+.charts-left > div {
+  display: flex;
+  justify-content: space-around;
+}
+
+.charts-left button {
+  width: 35%;
+  margin: 0 auto;
+}
+
+.charts-right button {
+  width: 35%;
+}
+
+.divider-body {
+  height: 0;
+}
+
+.divider-line {
+  width: 100%;
+  border-bottom: 1px solid grey;
+}
+
+.divider-body > .left {
+  margin-right: 0.5rem;
+}
+
+.divider-body > .right {
+  margin-left: 0.5rem;
+}
+
+.center {
+  line-height: normal;
+}
+
+/* SHARING CONTAINER STYLES */
+
+.socials-container {
+  height: 25%;
+  text-align: center;
+}
+
+.main-right .btn:hover {
+  color: dimgrey;
+  background-color: cyan;
+}
+
+.main-right .btn {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 3rem;
+  margin-bottom: 0.7rem;
+  color: white;
+  background-color: dimgrey;
+  text-decoration: none;
+  line-height: 3rem;
+}
+
+.fa {
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.links-container,
+.links-content,
+th {
+  text-align: start;
+}
+
+.links-container {
+  margin-top: 1.25rem;
+}
+
+.divider-share-cont {
+  margin: 1.5rem 0;
+}
+
+.p-filler-share-cont {
+  height: 3rem;
+  padding: 1rem 0;
+  font-size: small;
+}
+
+.copy-row {
+  display: flex;
+  padding: 0.25rem 0;
+}
+
+/* TABLE STYLES */
+
+tbody {
+  background-color: white;
+}
+
+th {
+  height: 4rem;
+  background-color: darkgrey;
+}
+
+td {
+  border-bottom: 1px solid grey;
+}
+
+.table-column-left {
+  padding-left: 1.5rem;
+}
+
+.table-bottom-row {
+  border-bottom: 0;
+}
+
+.text-and-icon {
+  /* display: flex; */
+  /* delete selector if not used for vertical centering */
+}

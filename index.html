@@ -3,56 +3,56 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- add font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
     <title>Placeholder</title>
+    <!-- save 'favicon.ico' in new images folder -->
+    <!-- <link rel="icon" type="image/x-icon" href="/images/favicon.ico"> -->
   </head>
   <body>
     <nav>
-      <section class="nav-user">
-        <img>
-        <h5>User's name</h5>
+      <section class="nav-user-container">
+        <img src="" alt="user img">
+        <h4>User's name</h4>
       </section>
-      <section class="nav-primary">
-        <h6>Main</h6>
-        <menu class="nav-menu-primary">
-          <li>
-            <img>
-            <button id="home">1</button>
-          </li>
-          <li>
-            <!-- add remaining icon imgs -->
-            <button id="ex2">2</button></li>
-          <li><button id="ex3">3</button></li>
-          <li><button id="ex4">4</button></li>
-          <li><button id="ex5">5</button></li>
-        </menu>
+      <section class="nav-primary-container">
+        <h5>Main</h5>
+        <div>
+          <button><i class="material-symbols-rounded">home</i>Home</button>
+          <button><i class="material-symbols-rounded">group</i>Friends</button>
+          <button><i class="material-symbols-rounded">pets</i>Pets</button>
+          <button><i class="material-symbols-rounded">favorite</i>Favorites</button>
+          <button><i class="material-symbols-rounded">eco</i>Something</button>
+        </div>
       </section>
-      <section class="nav-primary">
-        <h6>Admin</h6>
-        <menu class="nav-menu-primary">
-          <li><button id="users">1</button></li>
-          <li><button id="ex2">2</button></li>
-          <li><button id="ex3">3</button></li>
-          <li><button id="ex4">4</button></li>
-          <li><button id="ex5">5</button></li>
-        </menu>
+      <section class="nav-primary-container">
+        <h5>Admin</h5>
+        <div>
+          <button><i class="material-symbols-rounded">my_location</i>Other</button>
+          <button><i class="material-symbols-rounded">near_me</i>Things</button>
+          <button><i class="material-symbols-rounded">directions_car</i>Will</button>
+          <button class="active"><i class="material-symbols-rounded">waves</i>Be Put</button>
+          <button><i class="material-symbols-rounded">sleep</i>Here</button>
+        </div>
       </section>
-      <section class="nav-secondary">
-        <h6>Categories</h6>
-        <menu class="nav-menu-secondary">
-          <!-- checkboxes instead of buttons? -->
-          <li><button id="users">1</button></li>
-          <li><button id="ex2">2</button></li>
-          <li><button id="ex3">3</button></li>
-          <li><button id="ex4">4</button></li>
-        </menu>
+      <section class="nav-secondary-container">
+        <h5>Categories</h5>
+        <div>
+          <button><i class="material-symbols-rounded">check_box</i>More</button>
+          <button><i class="material-symbols-rounded">check_box_outline_blank</i>Other</button>
+          <button><i class="material-symbols-rounded">check_box_outline_blank</i>Things</button>
+          <button><i class="material-symbols-rounded">check_box_outline_blank</i>Go Here</button>
+        </div>
       </section>
     </nav>
     <main>
-      <header class="search-bar">
-        <div>Icon</div>
-        <div class="search-container">
+      <header class="search-container">
+        <div class="search-icons">Icon</div>
+        <div class="search-bar">
           <div>Search Icon</div>
           <form role="search">
             <input type="search" id="site-search" name="q"
@@ -60,32 +60,39 @@
               aria-label="Search through site content">
           </form>
         </div>
-        <div>Icon</div>
-        <div>Icon</div>
-        <div>Icon</div>
+        <div class="search-icons">Icon</div>
+        <div class="search-icons">Icon</div>
+        <div class="search-icons">Icon</div>
       </header>
-      <header class="main-nav-container">
-        <hgroup>
-          <h1>Biggest Header</h1>
-          <p>Subheader</p>
-          <a href="https://google.com">Placeholder link text</a>
-        </hgroup>
-        <div class="main-nav-quick-icons">
-          <button>Icon buttons - add imgs</button>
-          <button>Icon buttons - add imgs</button>
-          <button>Icon buttons - add imgs</button>
-          <button>Icon buttons - add imgs</button>
-        </div>
-        <menu class="main-nav-menu">
-          <li><button id="aButton">Some nav button</button></li>
-          <li><button id="aButton">Some nav button</button></li>
-          <li><button id="aButton">Some nav button</button></li>
-          <li><button id="aButton">Some nav button</button></li>
-          <li><button id="aButton">Some nav button</button></li>
-          <li><button id="aButton">Some nav button</button></li>
-          <li><button id="aButton">Some nav button</button></li>
-        </menu>
-      </header>
+      <div class="main-nav-container">
+        <header class="main-nav-header">
+          <div class="main-nav-top-row">
+            <hgroup>
+              <h1>Biggest Header</h1>
+              <div class="subheader-container">
+                <p class="subheader">Subheader</p>
+                <p>•</p>
+                <a href="https://google.com" class="main-link">Placeholder link text</a>
+              </div>
+            </hgroup>
+            <div class="main-nav-quick-icons">
+              <button class="icon-wide">Icon</button>
+              <button class="icon-circle">Icon</button>
+              <button class="icon-circle">Icon</button>
+              <button class="icon-circle">Icon</button>
+            </div>
+          </div>
+          <div class="main-nav-tabs"> 
+            <button class="default-tab">Some nav button</button>
+            <button>Something really long to test</button>
+            <button>Short</button>
+            <button>Some nav button</button>
+            <button>Some nav button</button>
+            <button>Some nav button</button>
+            <button>Some nav button</button>
+          </div>
+        </header>
+      </div>
       <div class="main-body-container">
         <div class="main-body-top">
           <div class="charts-left">
@@ -101,70 +108,99 @@
             <button>Right charts</button>
           </div>
         </div>
-        <hr>
+        <div class="divider-body">
+          <div class="divider-line left"></div>
+          <div><i class="material-symbols-rounded center">expand_circle_down</i></div>
+          <div class="divider-line right"></div>
+        </div>
         <div class="main-body-bottom">
           <section class="main-left">
-            <div>
-              <h4>Section Header</h4>
-              <button>Edit w/ icon</button>
-            </div>
-            <div>
-              <h6>Location</h6>
-              <p>Denver, CO</p>
-            </div>
-            <div>
-              <h6>Row header</h6>
-              <p>Row text</p>
-            </div>
-            <div>
-              <h6>Row header</h6>
-              <p>Row text</p>
-            </div>
-            <div>
-              <h6>Row header</h6>
-              <p>Row text</p>
-            </div>
-            <div>
-              <h6>Row header</h6>
-              <p>Row text</p>
-            </div>
-            <div>
-              <h6>Row header</h6>
-              <p>Row text - longer paragraph here</p>
-            </div>
-            <div>
-              <h6>Row header</h6>
-              <div>
-                <!-- Icon image -->
-                <p>Row text</p>
-              </div>
-            </div>
-            <div>
-              <h6>Row header</h6>
-              <p>Row text</p>
-            </div>
+            <table class="info-card">
+              <thead>
+                <th class="table-column-left">Description</th>
+                <th>
+                  <button><i class="material-symbols-rounded">home</i>Edit</button>
+                </th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="table-column-left">Title</td>
+                  <td>Details</td>
+                </tr>
+                <tr>
+                  <td class="table-column-left">Title</td>
+                  <td>Details</td>
+                </tr>
+                <tr>
+                  <td class="table-column-left">Title</td>
+                  <td>Details</td>
+                </tr>
+                <tr>
+                  <td class="table-column-left">Title</td>
+                  <td>Details</td>
+                </tr>
+                <tr>
+                  <td class="table-column-left">Title</td>
+                  <td>Details</td>
+                </tr>
+                <tr>
+                  <td class="table-column-left">Title</td>
+                  <td>Details - longer paragraph goes here</td>
+                </tr>
+                <tr>
+                  <td class="table-column-left">Title</td>
+                  <td class="text-and-icon">
+                    <i class="material-symbols-rounded">home</i>
+                    <span>Details with icon</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="table-column-left table-bottom-row">Title</td>
+                  <td class="table-bottom-row">Details</td>
+                </tr>
+              </tbody>
+            </table>
           </section>
           <div class="main-right">
-            <button>Share1</button>
-            <button>Share2</button>
-            <button>Share3</button>
-            <div>
-              <section>
+            <div class="socials-container">
+              <a class="btn btn-icon btn-facebook" href="#">
+                <i class="fa fa-facebook"></i>
+                <span class="share-label">Share on Facebook</span>
+              </a>
+              <a class="btn btn-icon btn-twitter" href="#">
+                <i class="fa fa-twitter"></i>
+                <span class="share-label">Share on Twitter</span>
+              </a>
+              <a class="btn btn-icon btn-pinterest" href="#">
+                <i class="fa fa-pinterest"></i>
+                <span class="share-label">Save to Pinterest</span>
+              </a>
+            </div>
+            <div class="links-container">
+              <section class="links-content">
                 <h4>Outside link 1</h4>
-                <p>Filler text</p>
-                <!-- are these inputs? -->
-                <button>Copy</button>
+                <p class="p-filler-share-cont">Filler text</p>
+                <div class="copy-row">
+                  <input class="copy-fields" type="text" value="placeholderlinkblahblah" id="">
+                  <button>Copy</button>
+                </div>
               </section>
-              <section>
-                <h4>Outside link 2</h4>
-                <p>Filler text</p>
-                <!-- are these inputs? -->
-                <button>Copy</button>
+              <div class="divider-share-cont divider-line"></div>
+              <section class="links-content">
+                <h4>Embed on a Webpage</h4>
+                <p class="p-filler-share-cont">Copy</p>
+                <div class="copy-row">
+                  <input class="copy-fields" type="text" value="placeholderlinkblahblah" id="">
+                  <button>Copy</button>
+                </div>
               </section>
-              <section>
-                <h4>Outside link 3</h4>
-                <p>Filler text</p>
-                <!-- are these inputs? -->
+              <div class="divider-share-cont divider-line"></div>
+              <section class="links-content">
+                <h4>Contact Customer Service</h4>
+                <p class="p-filler-share-cont">Send an email to the address below with any questions, concerns, or feedback.</p>
+                <div class="copy-row">
+                  <input class="copy-fields" type="text" value="placeholder@gmail.com" id="">
+                </div>
               </section>
             </div>
           </div>
