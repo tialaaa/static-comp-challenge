@@ -3,19 +3,13 @@
   /* border: 1px solid green; */
 }
 
-body,
-nav,
-main {
-  height: 100vh;
-}
-
 body {
-  width: 100vw;
+  display: flex;
   margin: 0;
 }
 
 main {
-  margin-left: 12rem;
+  flex: 1;
 }
 
 p,
@@ -27,31 +21,51 @@ button:hover {
   cursor: pointer;
 }
 
-nav {
+nav, 
+nav h5,
+.nav-user-container,
+.nav-primary-container,
+.nav-secondary-container,
+.main-nav-header,
+.charts-left,
+.charts-right {
   display: flex;
   flex-direction: column;
-  width: 12rem;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  overflow-x: hidden;
+}
+
+nav button,
+.nav-user-container,
+.search-container,
+.search-icons,
+.search-bar,
+.subheader-container,
+.main-nav-quick-icons,
+.charts-right {
+  display: flex;
+  align-items: center;
+}
+
+.search-container,
+.main-nav-header,
+.main-nav-quick-icons,
+.main-body-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+  flex: 0 0 12rem;
   padding-top: 1rem;
   background-color: grey;
 }
 
 .nav-user-container {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
   height: 10rem;
 }
 
 .nav-primary-container,
 .nav-secondary-container {
-  display: flex;
-  flex-direction: column;
   justify-content: space-evenly;
   height: 15rem;
 }
@@ -61,8 +75,6 @@ nav {
 }
 
 nav h5 {
-  display: flex;
-  flex-direction: column;
   align-items: flex-start;
   padding-left: 1rem;
   /* adjust margin after choosing font */
@@ -82,8 +94,6 @@ nav i {
 }
 
 nav button {
-  display: flex;
-  align-items: center;
   width: 100%;
   padding: 0.4rem 0 0.4rem 1rem;
   border: 0px;
@@ -101,16 +111,8 @@ nav button.active {
   background-color: dimgrey;
 }
 
-.search-container,
-.search-icons,
-.search-bar {
-  display: flex;
-  align-items: center;
-}
-
 .search-container {
-  justify-content: space-between;
-  height: 6rem;
+  height: 5rem;
   background-color: darkgray;
 }
 
@@ -149,9 +151,6 @@ nav button.active {
 }
 
 .main-nav-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   height: 9rem;
 }
 
@@ -168,8 +167,6 @@ hgroup > div {
 }
 
 .subheader-container {
-  display: flex;
-  align-items: center;
   height: 2.5rem;
 }
 
@@ -181,9 +178,6 @@ hgroup > div {
 }
 
 .main-nav-quick-icons {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   width: 25%;
 }
 
@@ -212,15 +206,11 @@ hgroup > div {
 }
 
 .main-body-top {
-  display: flex;
-  justify-content: space-between;
   height: 16rem;
 }
 
 .charts-left,
 .charts-right {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
 }
 
@@ -229,7 +219,6 @@ hgroup > div {
 }
 
 .charts-right {
-  align-items: center;
   width: 40%
 }
 
