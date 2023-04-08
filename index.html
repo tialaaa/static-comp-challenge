@@ -3,19 +3,20 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
     <title>Placeholder</title>
+    <!-- save 'favicon.ico' in new images folder -->
+    <!-- <link rel="icon" type="image/x-icon" href="/images/favicon.ico"> -->
   </head>
   <body>
     <nav>
       <section class="nav-user-container">
-        <img alt="user img">
+        <img src="" alt="user img">
         <h4>User's name</h4>
       </section>
       <section class="nav-primary-container">
@@ -155,10 +156,19 @@
             </div>
           </section>
           <div class="main-right">
-            <button>Share1</button>
-            <button>Share2</button>
-            <button>Share3</button>
-            <div>
+            <a class="btn btn-icon btn-facebook" href="#">
+              <i class="fa fa-facebook"></i>
+              <span class="share-label">Share on Facebook</span>
+            </a>
+            <a class="btn btn-icon btn-twitter" href="#">
+              <i class="fa fa-twitter"></i>
+              <span class="share-label">Share on Twitter</span>
+            </a>
+            <a class="btn btn-icon btn-pinterest" href="#">
+              <i class="fa fa-pinterest"></i>
+              <span class="share-label">Save to Pinterest</span>
+            </a>
+            <div class="share-links-container">
               <section>
                 <h4>Outside link 1</h4>
                 <p>Filler text</p>
