@@ -10,6 +10,7 @@ body,
 hgroup > div {
   display: flex;
   margin: 0;
+  background-color: rgb(255,255,255);
 }
 
 main,
@@ -33,7 +34,7 @@ button:hover {
   font-size: 1.25rem;
   font-variation-settings:
   'FILL' 1,
-  'wght' 400,
+  'wght' 300,
   'GRAD' 0,
   'opsz' 20
 }
@@ -85,7 +86,8 @@ nav button,
 nav {
   flex: 0 0 12rem;
   padding-top: 1rem;
-  background-color: grey;
+  color: rgb(197,197,197);
+  background-color: rgb(51,51,51);
 }
 
 .nav-user-container {
@@ -121,25 +123,32 @@ nav button {
   width: 100%;
   padding: 0.5rem 0 0.5rem 1rem;
   border: 0px;
-  background-color: grey;
+  color: rgb(197,197,197);
+  background-color: rgb(51,51,51);
 }
 
 nav button:hover, 
 nav button.active {
-  background-color: darkgrey;
   border-left: 2px solid cyan;
-  padding: 0.4rem 0 0.4rem 0.88rem;
+  padding-left: 0.88rem;
+  color: rgb(51,51,51);
+  background-color: rgb(155,170,150);
 }
 
 nav button.active {
-  background-color: dimgrey;
+  color: rgb(51,51,51);
+  background-color: rgb(197,197,197);
 }
+
+/* .check-box {
+  color: rgb(155,170,150);
+} */
 
 /* SEARCH BAR STYLES */
 
 .search-container {
   height: 5rem;
-  background-color: darkgray;
+  background-color: rgb(255,255,255)
 }
 
 .search-icons {
@@ -149,7 +158,7 @@ nav button.active {
 }
 
 .search-icons:hover {
-  background-color: cyan;
+  background-color: rgb(155,170,150);
   cursor: pointer;
 }
 
@@ -203,7 +212,7 @@ hgroup {
   margin-right: 1rem;
   border: 0;
   padding: 0 0.5px;
-  background-color: white;
+  background-color: rgb(255,255,255);
 }
 
 .main-nav-tabs > button:hover {
@@ -217,8 +226,8 @@ hgroup {
 /* MAIN BODY GENERAL STYLES */
 
 .main-body-container {
-  border: 3rem solid blanchedalmond;
-  background-color: blanchedalmond;
+  border: 3rem solid rgb(197,197,197);
+  background-color: rgb(197,197,197);
 }
 
 .main-body-top {
@@ -300,7 +309,7 @@ hgroup {
 }
 
 .main-right .btn:hover {
-  color: dimgrey;
+  color: rgb(15,61,71);
   background-color: cyan;
 }
 
@@ -310,8 +319,8 @@ hgroup {
   width: 100%;
   height: 3rem;
   margin-bottom: 0.7rem;
-  color: white;
-  background-color: dimgrey;
+  color: rgb(255,255,255);
+  background-color: rgb(15,61,71);
   text-decoration: none;
   line-height: 3rem;
 }
@@ -352,12 +361,13 @@ th {
 /* TABLE STYLES */
 
 tbody {
-  background-color: white;
+  background-color: rgb(255,255,255);
 }
 
 th {
   height: 4rem;
-  background-color: darkgrey;
+  color: rgb(255,255,255);
+  background-color: rgb(155,170,150);
 }
 
 td {
