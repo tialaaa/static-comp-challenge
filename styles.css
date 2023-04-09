@@ -414,14 +414,26 @@ th {
 
 .copy-row {
   display: flex;
-  padding: 0.25rem 0;
-}
-.copy-row > input,
-.copy-row > button {
-  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
+  margin: 0.25rem 0;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
-.last {
+.copy-fields,
+.copy-row > button {
+  padding: 0.75rem 1rem;
+  border: 0;
+  color: rgb(85,85,85);
+  font-size: small;
+}
+
+.copy-row > button {
+  color: rgb(255,255,255);
+  background-color: rgb(66, 101, 24);
+  text-transform: capitalize;
+}
+
+.last{
+  margin-bottom: 0;
   padding-bottom: 0;
 }
 
