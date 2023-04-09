@@ -87,7 +87,7 @@ nav {
   flex: 0 0 12rem;
   padding-top: 1rem;
   color: rgb(197,197,197);
-  background-color: rgb(51,51,51);
+  background-color: rgb(85,85,85);
 }
 
 .nav-user-container {
@@ -96,7 +96,13 @@ nav {
 }
 
 .nav-user-container > img {
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
+}
+
+.nav-user-container > h4 {
+  padding: 0.75rem 0;
 }
 
 .nav-primary-container,
@@ -124,24 +130,24 @@ nav button {
   padding: 0.5rem 0 0.5rem 1rem;
   border: 0px;
   color: rgb(197,197,197);
-  background-color: rgb(51,51,51);
+  background-color: rgb(85,85,85);
 }
 
 nav button:hover, 
 nav button.active {
-  border-left: 2px solid cyan;
+  border-left: 2px solid rgb(176,215,239);
   padding-left: 0.88rem;
-  color: rgb(51,51,51);
-  background-color: rgb(155,170,150);
+  color: rgb(85,85,85);
+  background-color: rgb(210,230,187);
 }
 
 nav button.active {
-  color: rgb(51,51,51);
-  background-color: rgb(197,197,197);
+  color: rgb(225,225,225);
+  background-color: rgb(115,146,78);
 }
 
 /* .check-box {
-  color: rgb(155,170,150);
+  color: rgb(201,201,201);
 } */
 
 /* SEARCH BAR STYLES */
@@ -158,7 +164,7 @@ nav button.active {
 }
 
 .search-icons:hover {
-  background-color: rgb(155,170,150);
+  background-color: rgb(176,215,239);
   cursor: pointer;
 }
 
@@ -216,11 +222,11 @@ hgroup {
 }
 
 .main-nav-tabs > button:hover {
-  background-color: cyan;
+  background-color: rgb(176,215,239);
 }
 
 .main-nav-tabs > .default-tab {
-  border-bottom: 3px solid cyan;
+  border-bottom: 3px solid rgb(176,215,239);
 }
 
 /* MAIN BODY GENERAL STYLES */
@@ -301,6 +307,11 @@ hgroup {
   line-height: normal;
 }
 
+.image-container > img {
+  width: 400px;
+  height: auto;
+}
+
 /* SHARING CONTAINER STYLES */
 
 .socials-container {
@@ -309,8 +320,8 @@ hgroup {
 }
 
 .main-right .btn:hover {
-  color: rgb(15,61,71);
-  background-color: cyan;
+  color: rgb(225,225,225);
+  background-color: rgb(115,146,78);
 }
 
 .main-right .btn {
@@ -319,8 +330,8 @@ hgroup {
   width: 100%;
   height: 3rem;
   margin-bottom: 0.7rem;
-  color: rgb(255,255,255);
-  background-color: rgb(15,61,71);
+  color: rgb(85,85,85);
+  background-color: rgb(210,230,187);
   text-decoration: none;
   line-height: 3rem;
 }
@@ -367,15 +378,21 @@ tbody {
 th {
   height: 4rem;
   color: rgb(255,255,255);
-  background-color: rgb(155,170,150);
+  background-color: rgb(115,146,78);
 }
 
 td {
   border-bottom: 1px solid grey;
+  padding: 1rem 0;
 }
 
 .table-column-left {
-  padding-left: 1.5rem;
+  width: 25%;
+  padding-left: 2rem;
+}
+
+.table-column-right {
+  padding-right: 2rem;
 }
 
 .table-bottom-row {
