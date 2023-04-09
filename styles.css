@@ -90,14 +90,14 @@ nav button,
 
 nav {
   flex: 0 0 12rem;
-  padding-top: 1rem;
+  padding-top: 1.75rem;
   color: rgb(255,255,255);
   background-color: rgb(85,85,85);
 }
 
 .nav-user-container {
   justify-content: center;
-  height: 10rem;
+  /* height: 10rem; */
 }
 
 .nav-user-container > img {
@@ -107,13 +107,16 @@ nav {
 }
 
 .nav-user-container > h4 {
-  padding: 0.75rem 0;
+  padding-top: 0.75rem;
+  font-weight: 400;
 }
 
 .nav-primary-container,
 .nav-secondary-container {
   justify-content: space-evenly;
-  height: 16rem;
+  /* height: 16rem; */
+  margin-top: 1.75rem;
+  border-top: 2px solid rgba(54, 54, 54, 0.5);
 }
 
 .nav-secondary-container {
@@ -123,7 +126,7 @@ nav {
 nav h5 {
   align-items: flex-start;
   padding-left: 1.5rem;
-  margin: 2em 0;
+  margin: 1.75em 0 0.75rem 0;
 }
 
 nav i {
