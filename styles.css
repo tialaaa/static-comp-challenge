@@ -97,6 +97,7 @@ nav {
 
 .nav-user-container {
   justify-content: center;
+  padding-bottom: 1.75rem;
   /* height: 10rem; */
 }
 
@@ -113,15 +114,14 @@ nav {
 
 .nav-primary-container,
 .nav-secondary-container {
-  justify-content: space-evenly;
-  /* height: 16rem; */
-  margin-top: 1.75rem;
+  padding-bottom: 1.75rem;
   border-top: 2px solid rgba(54, 54, 54, 0.5);
+  box-shadow: 0 0.5px 2px rgba(54,54,54,0.5)
 }
 
-.nav-secondary-container {
+/* .nav-secondary-container {
   height: 13.5rem;
-}
+} */
 
 nav h5 {
   align-items: flex-start;
