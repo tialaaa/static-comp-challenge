@@ -168,7 +168,7 @@ button.search-icons {
   color: rgb(85,85,85);
   background-color: rgb(255,255,255);
   border: 0;
-  box-shadow: 0 0.5px 1px darkgray;
+  box-shadow: 0 0.75px 2px rgba(85,85,85,0.5);
 }
 
 button.search-icons > i,
@@ -193,7 +193,7 @@ button.search-icons:hover {
 .search-bar {
   flex: 1;
   height: 100%;
-  box-shadow: 0 0.5px 1px darkgray;
+  box-shadow: 0 0.75px 2px rgba(85,85,85,0.5);
 }
 
 form {
@@ -217,9 +217,7 @@ form {
   padding-bottom: 0;
   border-bottom: 1px solid darkgrey;
   position: relative;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
-  /* remove extras once decided */
+  box-shadow: 0 0.75px 2px rgba(85,85,85,0.25);
 }
 
 .main-nav-header {
@@ -255,6 +253,7 @@ hgroup {
   width: 2.05rem;
   border: 2px solid rgba(85,85,85,0.25);
   border-radius: 50%;
+  box-shadow: 0 0.5px 1px rgb(201,201,201);
   padding: 0;
   color: rgb(85,85,85);
   background-color: rgb(255,255,255);
@@ -312,8 +311,7 @@ hgroup {
   width: 100%;
   height: 100%;
   border-spacing: 0;
-  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: 0px 1px 4px rgba(85,85,85,0.25);
 }
 
 /* CHART CONTAINER STYLES */
@@ -351,8 +349,8 @@ hgroup {
 
 .divider-line {
   width: 100%;
-  border-bottom: 1px solid darkgrey;
-  box-shadow: 0 0.5px 1px darkgray;
+  border-bottom: 1px solid rgba(85,85,85,0.25);
+  box-shadow: 0 0.5px 1px rgba(85,85,85,0.25);
 }
 
 .divider-body > .left {
@@ -384,6 +382,7 @@ hgroup {
   /* width: 100%; */
   height: 100%;
   border-radius: 2px;
+  box-shadow: 0 0.75px 2px rgba(85,85,85,0.25);
 }
 
 /* SHARING CONTAINER STYLES */
@@ -409,7 +408,7 @@ hgroup {
   background-color: rgb(210,230,187);
   text-decoration: none;
   line-height: 3rem;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  box-shadow: 0px 1px 4px rgba(85,85,85,0.25);
 }
 
 .fa {
@@ -443,7 +442,7 @@ th {
 .copy-row {
   display: flex;
   margin: 0.25rem 0;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  box-shadow: 0px 1px 4px rgba(85,85,85,0.25);
 }
 
 .copy-fields,
