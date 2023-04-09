@@ -5,7 +5,7 @@ This project focused on recreating a static webpage comp using only HTML and CSS
 
 ### Design Preview:
 Final Output<br><br>
-![screenshot of project webpage](https://user-images.githubusercontent.com/121128718/230798411-3e99c1fb-43e8-43e4-8fad-fe7a9b6c4277.png)
+![screenshot of project webpage - Garden Helper](https://user-images.githubusercontent.com/121128718/230798695-bf98a19f-1fbd-4a71-be5e-de7b5555ecac.png)
 
 Design Comp<br><br>
 ![screenshot of comp webpage](https://user-images.githubusercontent.com/121128718/230798291-89488210-4aa3-4c95-bc71-097ca4b0e0ad.png)
