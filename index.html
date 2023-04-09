@@ -15,7 +15,7 @@
   <body>
     <nav>
       <section class="nav-user-container">
-        <img src="assests/user-photo.jpeg" alt="User image">
+        <img src="assests/user-photo.jpeg" alt="User's profile photo">
         <h4>Pam Beesly</h4>
       </section>
       <section class="nav-primary-container">
@@ -50,18 +50,28 @@
     </nav>
     <main>
       <header class="search-container">
-        <div class="search-icons">Icon</div>
+        <div class="search-icons">
+          <i class="material-symbols-rounded">menu</i>
+        </div>
         <div class="search-bar">
-          <div>Search Icon</div>
+          <i class="material-symbols-rounded">search</i>
           <form role="search">
-            <input type="search" id="site-search" name="q"
-              placeholder="Search for a plant, location, or guide"
+            <input type="search" id="siteSearch" name="q"
+              placeholder="Search for a plant, category, or guide"
               aria-label="Search through site content">
           </form>
         </div>
-        <div class="search-icons">Icon</div>
-        <div class="search-icons">Icon</div>
-        <div class="search-icons">Icon</div>
+        <div class="search-icons-right">
+          <div class="search-icons">
+            <i class="material-symbols-rounded">view_cozy</i>
+          </div>
+          <div class="search-icons">
+            <i class="material-symbols-rounded">settings</i>
+          </div>
+          <div class="search-icons">
+            <i class="material-symbols-rounded">logout</i>
+          </div>
+        </div>
       </header>
       <div class="main-nav-container">
         <header class="main-nav-header">
@@ -100,28 +110,30 @@
               <div>Chart2</div>
               <div>Chart3</div>
             </div>
-            <button>Left charts</button>
+            <div class="chart-subtitles">Growing Stats</div>
           </div>
           <div class="charts-right">
             <div class="image-container">
-              <img src="assests/tomato1.jpeg" alt="Cherry tomatoes growing on a vine">
+              <img src="assests/tomato1.jpeg" alt="Red and green cherry tomatoes growing on a vine">
             </div>
-            <button>Right charts</button>
+            <div class="chart-subtitles">Fruit Example</div>
           </div>
         </div>
         <div class="divider-body">
           <div class="divider-line left"></div>
-          <div><i class="material-symbols-rounded center">expand_circle_down</i></div>
+          <div><i class="material-symbols-rounded center-icon">expand_circle_down</i></div>
           <div class="divider-line right"></div>
         </div>
         <div class="main-body-bottom">
           <section class="main-left">
             <table class="info-card">
               <thead>
+                <tr class="no-border">
                 <th class="table-column-left">At a Glance</th>
                 <th class="table-column-right">
                   <button><i class="material-symbols-rounded">shopping_bag</i>Buy</button>
                 </th>
+              </tr>
               </thead>
               <tbody>
                 <tr>
@@ -150,14 +162,16 @@
                 </tr>
                 <tr>
                   <td class="table-column-left">Toxicity</td>
-                  <td  class="table-column-right text-and-icon">
-                    <i class="material-symbols-rounded">warning</i>
-                    <span>Leaves and roots are poisonous to pets and people.</span>
+                  <td  class="table-column-right">
+                    <div class="table-icon-row">
+                      <i class="material-symbols-rounded">warning</i>
+                      <span>Leaves and roots are poisonous to pets and people.</span>
+                    </div>
                   </td>
                 </tr>
-                <tr>
-                  <td class="table-column-left table-bottom-row">Harvesting</td>
-                  <td class="table-column-right table-bottom-row">Midseason; 50 to 65 days after planting</td>
+                <tr class="no-border">
+                  <td class="table-column-left">Harvesting</td>
+                  <td class="table-column-right">Midseason; 50 to 65 days after planting</td>
                 </tr>
               </tbody>
             </table>
@@ -199,7 +213,7 @@
               <section class="links-content">
                 <h4>Contact for Support</h4>
                 <p class="p-filler-share-cont">Send an email to the address below with any questions, concerns, or feedback.</p>
-                <div class="copy-row">
+                <div class="copy-row last">
                   <input class="copy-fields" type="text" value="contact@gardenhelper.com" id="">
                 </div>
               </section>
