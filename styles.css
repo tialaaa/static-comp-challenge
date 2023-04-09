@@ -26,6 +26,11 @@ h4 {
   margin: 0;
 }
 
+button,
+.table-column-left {
+  text-transform: uppercase;
+}
+
 button:hover {
   cursor: pointer;
 }
@@ -117,9 +122,8 @@ nav {
 
 nav h5 {
   align-items: flex-start;
-  padding-left: 1rem;
+  padding-left: 1.5rem;
   margin: 2em 0;
-  /* adjust margin after choosing font */
 }
 
 nav i {
@@ -128,7 +132,7 @@ nav i {
 
 nav button {
   width: 100%;
-  padding: 0.5rem 0 0.5rem 1rem;
+  padding: 0.5rem 0 0.5rem 1.5rem;
   border: 0px;
   color: rgb(255,255,255);
   background-color: rgb(85,85,85);
@@ -137,7 +141,7 @@ nav button {
 nav button:hover, 
 nav button.active {
   border-left: 2px solid rgb(176,215,239);
-  padding-left: 0.88rem;
+  padding-left: 1.35rem;
   color: rgb(85,85,85);
   background-color: rgb(210,230,187);
 }
@@ -208,6 +212,10 @@ form {
   padding: 3rem;
   padding-bottom: 0;
   border-bottom: 1px solid darkgrey;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+  /* remove extras once decided */
 }
 
 .main-nav-header {
@@ -263,14 +271,6 @@ hgroup {
 .main-body-container {
   border: 3rem solid rgb(197,197,197);
   background-color: rgb(197,197,197);
-}
-
-.main-nav-container {
-  position: relative;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
-  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
-  /* remove extras once decided */
 }
 
 .main-body-top {
@@ -475,7 +475,7 @@ tr.no-border:before {
 
 .table-icon-row > i {
   padding-right: 0.5rem;
-  /* color: rgb(85,85,85); */
+  color: brown;
 }
 
 .table-column-right > button {
