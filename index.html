@@ -10,22 +10,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
     <title>Placeholder</title>
-    <!-- save 'favicon.ico' in new images folder -->
-    <!-- <link rel="icon" type="image/x-icon" href="/images/favicon.ico"> -->
+    <link rel="icon" type="image/x-icon" href="assests/favicon.png">
   </head>
   <body>
     <nav>
       <section class="nav-user-container">
-        <img src="" alt="user img">
-        <h4>User's name</h4>
+        <img src="assests/user-photo.jpeg" alt="User image">
+        <h4>Pam Beesly</h4>
       </section>
       <section class="nav-primary-container">
         <h5>Profile</h5>
         <div>
           <button><i class="material-symbols-rounded">home</i>Dashboard</button>
           <button><i class="material-symbols-rounded">favorite</i>Favorites</button>
-          <button><i class="material-symbols-rounded">group</i>Friends</button>
-          <button><i class="material-symbols-rounded">eco</i>Tasks</button>
+          <button><i class="material-symbols-rounded">date_range</i>Calendar</button>
+          <button><i class="material-symbols-rounded">potted_plant</i>Tasks</button>
           <button><i class="material-symbols-rounded">account_circle</i>Account</button>
         </div>
       </section>
@@ -89,7 +88,7 @@
             <button>Care Details</button>
             <button>Propagation</button>
             <button>Pests & Disease</button>
-            <button>Calendar</button>
+            <button>Photo Gallery</button>
           </div>
         </header>
       </div>
@@ -104,7 +103,9 @@
             <button>Left charts</button>
           </div>
           <div class="charts-right">
-            <div>Chart4</div>
+            <div class="image-container">
+              <img src="assests/tomato1.jpeg" alt="Cherry tomatoes growing on a vine">
+            </div>
             <button>Right charts</button>
           </div>
         </div>
@@ -118,45 +119,45 @@
             <table class="info-card">
               <thead>
                 <th class="table-column-left">At a Glance</th>
-                <th>
-                  <button><i class="material-symbols-rounded">home</i>Edit</button>
+                <th class="table-column-right">
+                  <button><i class="material-symbols-rounded">shopping_bag</i>Buy</button>
                 </th>
               </thead>
               <tbody>
                 <tr>
                   <td class="table-column-left">Hardiness Zone</td>
-                  <td>USDA Zones 2-11</td>
+                  <td class="table-column-right">USDA Zones 2-11</td>
                 </tr>
                 <tr>
                   <td class="table-column-left">Soil Type</td>
-                  <td>Loamy, Sandy, Moist, Well-drained (ph 6.0 to 6.5)</td>
+                  <td class="table-column-right">Loamy, Sandy, Moist, Well-drained (ph 6.0 to 6.5)</td>
                 </tr>
                 <tr>
                   <td class="table-column-left">Sunlight</td>
-                  <td>Full Sun, 6-8 hours daily</td>
+                  <td class="table-column-right">Full Sun; 6-8 hours daily</td>
                 </tr>
                 <tr>
                   <td class="table-column-left">Watering</td>
-                  <td>Moderate</td>
+                  <td class="table-column-right">Moderate</td>
                 </tr>
                 <tr>
                   <td class="table-column-left">Life Cycle</td>
-                  <td>Perennial; usually grown as Annual</td>
+                  <td class="table-column-right">Perennial; usually grown as Annual</td>
                 </tr>
                 <tr>
                   <td class="table-column-left">Fun Fact</td>
-                  <td>Although we often consume tomatoes as vegetables, they are biologically fruits! Combine Harvester swather, baler as haybine parsley, melon in hay rake. Petting zoo at carrots alligators quack. Coo with rabbits ect. Forage Harvester rakes peacocks, squeal garden woof. Straw augers beef kettle our crickets. Apples ducks straw, quail a ostriches donkey, hay hook cucumbers.</td>
+                  <td class="table-column-right">Although we often consume tomatoes as vegetables, they are biologically fruits! Combine Harvester swather, baler as haybine parsley, melon in hay rake. Petting zoo at carrots alligators quack. Forage Harvester rakes peacocks, squeal garden woof. Straw augers beef kettle our crickets. Apples ducks straw, quail a ostriches donkey, hay hook cucumbers.</td>
                 </tr>
                 <tr>
                   <td class="table-column-left">Toxicity</td>
-                  <td class="text-and-icon">
+                  <td  class="table-column-right text-and-icon">
                     <i class="material-symbols-rounded">warning</i>
                     <span>Leaves and roots are poisonous to pets and people.</span>
                   </td>
                 </tr>
                 <tr>
                   <td class="table-column-left table-bottom-row">Harvesting</td>
-                  <td class="table-bottom-row">50 to 65 days after planting</td>
+                  <td class="table-column-right table-bottom-row">Midseason; 50 to 65 days after planting</td>
                 </tr>
               </tbody>
             </table>
@@ -181,7 +182,7 @@
                 <h4>Link to this Page</h4>
                 <p class="p-filler-share-cont">Ewes fox, hay hook hay manure, livestock radish barn, a hay loft house at pony.</p>
                 <div class="copy-row">
-                  <input class="copy-fields" type="text" value="placeholderlinkblahblah" id="">
+                  <input class="copy-fields" type="text" value="https://gardenhelper.com/fruits/cherry-tomatoes" id="">
                   <button>Copy</button>
                 </div>
               </section>
