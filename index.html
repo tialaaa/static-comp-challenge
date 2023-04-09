@@ -10,86 +10,99 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
     <title>Placeholder</title>
-    <!-- save 'favicon.ico' in new images folder -->
-    <!-- <link rel="icon" type="image/x-icon" href="/images/favicon.ico"> -->
+    <link rel="icon" type="image/x-icon" href="assests/favicon.png">
   </head>
   <body>
     <nav>
       <section class="nav-user-container">
-        <img src="" alt="user img">
-        <h4>User's name</h4>
+        <img src="assests/user-photo.jpeg" alt="User's profile photo">
+        <h4>Pam Beesly</h4>
       </section>
       <section class="nav-primary-container">
-        <h5>Main</h5>
+        <h5>Profile</h5>
         <div>
-          <button><i class="material-symbols-rounded">home</i>Home</button>
-          <button><i class="material-symbols-rounded">group</i>Friends</button>
-          <button><i class="material-symbols-rounded">pets</i>Pets</button>
+          <button><i class="material-symbols-rounded">home</i>Dashboard</button>
           <button><i class="material-symbols-rounded">favorite</i>Favorites</button>
-          <button><i class="material-symbols-rounded">eco</i>Something</button>
+          <button><i class="material-symbols-rounded">date_range</i>Calendar</button>
+          <button><i class="material-symbols-rounded">potted_plant</i>Tasks</button>
+          <button><i class="material-symbols-rounded">account_circle</i>Account</button>
         </div>
       </section>
       <section class="nav-primary-container">
-        <h5>Admin</h5>
+        <h5>Resources</h5>
         <div>
-          <button><i class="material-symbols-rounded">my_location</i>Other</button>
-          <button><i class="material-symbols-rounded">near_me</i>Things</button>
-          <button><i class="material-symbols-rounded">directions_car</i>Will</button>
-          <button class="active"><i class="material-symbols-rounded">waves</i>Be Put</button>
-          <button><i class="material-symbols-rounded">sleep</i>Here</button>
+          <button class="active"><i class="material-symbols-rounded">book</i>Quick Guides</button>
+          <button><i class="material-symbols-rounded">my_location</i>Match Finder</button>
+          <button><i class="material-symbols-rounded">home_repair_service</i>Supplies</button>
+          <button><i class="material-symbols-rounded">photo_library</i>Gallery</button>
+          <button><i class="material-symbols-rounded">eco</i>Blog</button>
         </div>
       </section>
       <section class="nav-secondary-container">
         <h5>Categories</h5>
         <div>
-          <button><i class="material-symbols-rounded">check_box</i>More</button>
-          <button><i class="material-symbols-rounded">check_box_outline_blank</i>Other</button>
-          <button><i class="material-symbols-rounded">check_box_outline_blank</i>Things</button>
-          <button><i class="material-symbols-rounded">check_box_outline_blank</i>Go Here</button>
+          <button><i class="material-symbols-rounded check-box">check_box_outline_blank</i>Vegetables</button>
+          <button><i class="material-symbols-rounded check-box">check_box</i>Fruits</button>
+          <button><i class="material-symbols-rounded check-box">check_box_outline_blank</i>Herbs</button>
+          <button><i class="material-symbols-rounded check-box">check_box_outline_blank</i>Flowers</button>
         </div>
       </section>
     </nav>
     <main>
       <header class="search-container">
-        <div class="search-icons">Icon</div>
+        <button class="search-icons">
+          <i class="material-symbols-rounded">menu</i>
+        </button>
         <div class="search-bar">
-          <div>Search Icon</div>
+          <i class="material-symbols-rounded">search</i>
           <form role="search">
-            <input type="search" id="site-search" name="q"
-              placeholder="Search for a ...."
+            <input type="search" id="siteSearch" name="q"
+              placeholder="Search for a plant, category, or guide"
               aria-label="Search through site content">
           </form>
         </div>
-        <div class="search-icons">Icon</div>
-        <div class="search-icons">Icon</div>
-        <div class="search-icons">Icon</div>
+        <div class="search-icons-right">
+          <button class="search-icons">
+            <i class="material-symbols-rounded">view_cozy</i>
+          </button>
+          <button class="search-icons">
+            <i class="material-symbols-rounded">settings</i>
+          </button>
+          <button class="search-icons">
+            <i class="material-symbols-rounded">logout</i>
+          </button>
+        </div>
       </header>
       <div class="main-nav-container">
         <header class="main-nav-header">
           <div class="main-nav-top-row">
             <hgroup>
-              <h1>Biggest Header</h1>
+              <h1>Cherry Tomatoes</h1>
               <div class="subheader-container">
-                <p class="subheader">Subheader</p>
+                <p class="subheader">Solanum lycopersicum L.</p>
                 <p>•</p>
-                <a href="https://google.com" class="main-link">Placeholder link text</a>
+                <a href="https://google.com" class="main-link">See related plants</a>
               </div>
             </hgroup>
             <div class="main-nav-quick-icons">
-              <button class="icon-wide">Icon</button>
-              <button class="icon-circle">Icon</button>
-              <button class="icon-circle">Icon</button>
-              <button class="icon-circle">Icon</button>
+              <button class="icon-wide">
+                <i class="material-symbols-rounded">help</i>Help</button>
+              <button class="icon-circle">
+                <i class="material-symbols-rounded">favorite</i></button>
+              <button class="icon-circle">
+                <i class="material-symbols-rounded">mail</i></button>
+              <button class="icon-circle">
+                <i class="material-symbols-rounded">print</i></button>
             </div>
           </div>
           <div class="main-nav-tabs"> 
-            <button class="default-tab">Some nav button</button>
-            <button>Something really long to test</button>
-            <button>Short</button>
-            <button>Some nav button</button>
-            <button>Some nav button</button>
-            <button>Some nav button</button>
-            <button>Some nav button</button>
+            <button class="default-tab">Overview</button>
+            <button>History</button>
+            <button>Environment</button>
+            <button>Care Details</button>
+            <button>Propagation</button>
+            <button>Pests & Disease</button>
+            <button>Photo Gallery</button>
           </div>
         </header>
       </div>
@@ -101,62 +114,68 @@
               <div>Chart2</div>
               <div>Chart3</div>
             </div>
-            <button>Left charts</button>
+            <div class="chart-subtitles">Growing Stats</div>
           </div>
           <div class="charts-right">
-            <div>Chart4</div>
-            <button>Right charts</button>
+            <div class="image-container">
+              <img src="assests/tomato1.jpeg" alt="Red and green cherry tomatoes growing on a vine">
+            </div>
+            <div class="chart-subtitles">Fruit Example</div>
           </div>
         </div>
         <div class="divider-body">
           <div class="divider-line left"></div>
-          <div><i class="material-symbols-rounded center">expand_circle_down</i></div>
+          <div><i class="material-symbols-rounded center-icon">expand_circle_down</i></div>
           <div class="divider-line right"></div>
         </div>
         <div class="main-body-bottom">
           <section class="main-left">
             <table class="info-card">
               <thead>
-                <th class="table-column-left">Description</th>
-                <th>
-                  <button><i class="material-symbols-rounded">home</i>Edit</button>
+                <tr class="no-border">
+                <th class="table-column-left">At a Glance</th>
+                <th class="table-column-right">
+                  <button><i class="material-symbols-rounded">shopping_bag</i>Buy</button>
                 </th>
+              </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td class="table-column-left">Title</td>
-                  <td>Details</td>
+                  <td class="table-column-left">Hardiness Zone</td>
+                  <td class="table-column-right">USDA Zones 2-11</td>
                 </tr>
                 <tr>
-                  <td class="table-column-left">Title</td>
-                  <td>Details</td>
+                  <td class="table-column-left">Soil Type</td>
+                  <td class="table-column-right">Loamy, Sandy, Moist, Well-drained (ph 6.0 to 6.5)</td>
                 </tr>
                 <tr>
-                  <td class="table-column-left">Title</td>
-                  <td>Details</td>
+                  <td class="table-column-left">Sunlight</td>
+                  <td class="table-column-right">Full Sun; 6-8 hours daily</td>
                 </tr>
                 <tr>
-                  <td class="table-column-left">Title</td>
-                  <td>Details</td>
+                  <td class="table-column-left">Watering</td>
+                  <td class="table-column-right">Moderate</td>
                 </tr>
                 <tr>
-                  <td class="table-column-left">Title</td>
-                  <td>Details</td>
+                  <td class="table-column-left">Life Cycle</td>
+                  <td class="table-column-right">Perennial; usually grown as Annual</td>
                 </tr>
                 <tr>
-                  <td class="table-column-left">Title</td>
-                  <td>Details - longer paragraph goes here</td>
+                  <td class="table-column-left">Fun Fact</td>
+                  <td class="table-column-right">Although we often consume tomatoes as vegetables, they are biologically fruits! Combine Harvester swather, baler as haybine parsley, melon in hay rake. Petting zoo at carrots alligators quack. Forage Harvester rakes peacocks, squeal garden woof. Straw augers beef kettle our crickets. Apples ducks straw, quail a ostriches donkey, hay hook cucumbers.</td>
                 </tr>
                 <tr>
-                  <td class="table-column-left">Title</td>
-                  <td class="text-and-icon">
-                    <i class="material-symbols-rounded">home</i>
-                    <span>Details with icon</span>
+                  <td class="table-column-left">Toxicity</td>
+                  <td  class="table-column-right">
+                    <div class="table-icon-row">
+                      <i class="material-symbols-rounded">warning</i>
+                      <span>Leaves and roots are poisonous to pets and people.</span>
+                    </div>
                   </td>
                 </tr>
-                <tr>
-                  <td class="table-column-left table-bottom-row">Title</td>
-                  <td class="table-bottom-row">Details</td>
+                <tr class="no-border">
+                  <td class="table-column-left">Harvesting</td>
+                  <td class="table-column-right">Midseason; 50 to 65 days after planting</td>
                 </tr>
               </tbody>
             </table>
@@ -178,8 +197,17 @@
             </div>
             <div class="links-container">
               <section class="links-content">
-                <h4>Outside link 1</h4>
-                <p class="p-filler-share-cont">Filler text</p>
+                <h4>Link to this Page</h4>
+                <p class="p-filler-share-cont">Ewes fox, hay hook hay manure, livestock radish barn, a hay loft house at pony.</p>
+                <div class="copy-row">
+                  <input class="copy-fields" type="text" value="https://gardenhelper.com/fruits/cherry-tomatoes" id="">
+                  <button>Copy</button>
+                </div>
+              </section>
+              <div class="divider-share-cont divider-line"></div>
+              <section class="links-content">
+                <h4>Create a Widget</h4>
+                <p class="p-filler-share-cont">Garden wheat oats at augers, farmers market and cultivator ostrich.</p>
                 <div class="copy-row">
                   <input class="copy-fields" type="text" value="placeholderlinkblahblah" id="">
                   <button>Copy</button>
@@ -187,19 +215,10 @@
               </section>
               <div class="divider-share-cont divider-line"></div>
               <section class="links-content">
-                <h4>Embed on a Webpage</h4>
-                <p class="p-filler-share-cont">Copy</p>
-                <div class="copy-row">
-                  <input class="copy-fields" type="text" value="placeholderlinkblahblah" id="">
-                  <button>Copy</button>
-                </div>
-              </section>
-              <div class="divider-share-cont divider-line"></div>
-              <section class="links-content">
-                <h4>Contact Customer Service</h4>
+                <h4>Contact for Support</h4>
                 <p class="p-filler-share-cont">Send an email to the address below with any questions, concerns, or feedback.</p>
-                <div class="copy-row">
-                  <input class="copy-fields" type="text" value="placeholder@gmail.com" id="">
+                <div class="copy-row last">
+                  <input class="copy-fields" type="text" value="contact@gardenhelper.com" id="">
                 </div>
               </section>
             </div>

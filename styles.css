@@ -10,6 +10,7 @@ body,
 hgroup > div {
   display: flex;
   margin: 0;
+  background-color: rgb(255,255,255);
 }
 
 main,
@@ -25,6 +26,11 @@ h4 {
   margin: 0;
 }
 
+button,
+.table-column-left {
+  text-transform: uppercase;
+}
+
 button:hover {
   cursor: pointer;
 }
@@ -33,7 +39,7 @@ button:hover {
   font-size: 1.25rem;
   font-variation-settings:
   'FILL' 1,
-  'wght' 400,
+  'wght' 300,
   'GRAD' 0,
   'opsz' 20
 }
@@ -84,33 +90,43 @@ nav button,
 
 nav {
   flex: 0 0 12rem;
-  padding-top: 1rem;
-  background-color: grey;
+  padding-top: 1.75rem;
+  color: rgb(255,255,255);
+  background-color: rgb(85,85,85);
 }
 
 .nav-user-container {
   justify-content: center;
-  height: 10rem;
+  padding-bottom: 1.75rem;
+  /* height: 10rem; */
 }
 
 .nav-user-container > img {
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
+}
+
+.nav-user-container > h4 {
+  padding-top: 0.75rem;
+  font-weight: 400;
 }
 
 .nav-primary-container,
 .nav-secondary-container {
-  justify-content: space-evenly;
-  height: 15rem;
+  padding-bottom: 1.75rem;
+  border-top: 2px solid rgba(54, 54, 54, 0.5);
+  box-shadow: 0 0.5px 2px rgba(54,54,54,0.5)
 }
 
-.nav-secondary-container {
-  height: 13rem;
-}
+/* .nav-secondary-container {
+  height: 13.5rem;
+} */
 
 nav h5 {
   align-items: flex-start;
-  padding-left: 1rem;
-  /* adjust margin after choosing font */
+  padding-left: 1.5rem;
+  margin: 1.75em 0 0.75rem 0;
 }
 
 nav i {
@@ -119,43 +135,79 @@ nav i {
 
 nav button {
   width: 100%;
-  padding: 0.5rem 0 0.5rem 1rem;
+  padding: 0.5rem 0 0.5rem 1.5rem;
   border: 0px;
-  background-color: grey;
+  color: rgb(255,255,255);
+  background-color: rgb(85,85,85);
 }
 
 nav button:hover, 
 nav button.active {
-  background-color: darkgrey;
-  border-left: 2px solid cyan;
-  padding: 0.4rem 0 0.4rem 0.88rem;
+  border-left: 2px solid rgb(176,215,239);
+  padding-left: 1.35rem;
+  color: rgb(85,85,85);
+  background-color: rgb(210,230,187);
 }
 
 nav button.active {
-  background-color: dimgrey;
+  color: rgb(255,255,255);
+  background-color: rgb(66,101,24);
 }
 
 /* SEARCH BAR STYLES */
 
 .search-container {
   height: 5rem;
-  background-color: darkgray;
+  background-color: rgb(255,255,255)
 }
 
-.search-icons {
+button.search-icons {
   justify-content: center;
   width: 6rem;
   height: 100%;
+  color: rgb(85,85,85);
+  background-color: rgb(255,255,255);
+  border: 0;
+  box-shadow: 0 0.75px 2px rgba(85,85,85,0.5);
 }
 
-.search-icons:hover {
-  background-color: cyan;
-  cursor: pointer;
+button.search-icons > i,
+button.search-bar > i {
+  font-size: 1.75rem;
+}
+
+button.search-icons:hover {
+  background-color: rgb(176,215,239);
+}
+
+.search-icons-right {
+  display: flex;
+  height: 5rem;
+}
+
+.search-bar > i {
+  padding: 0 0.5rem 0 1.5rem;
+  color: rgb(85,85,85);
 }
 
 .search-bar {
-  width: 70%;
+  flex: 1;
   height: 100%;
+  box-shadow: 0 0.75px 2px rgba(85,85,85,0.5);
+}
+
+form {
+  flex: 1;
+}
+
+#siteSearch {
+  width: 98%;
+  border: 0;
+  padding: 0.5rem;
+}
+
+#siteSearch:focus-visible {
+  outline: rgb(115,146,78) auto 1px;
 }
 
 /* MAIN PAGE NAV HEADER STYLES */
@@ -163,7 +215,9 @@ nav button.active {
 .main-nav-container {
   padding: 3rem;
   padding-bottom: 0;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid darkgrey;
+  position: relative;
+  box-shadow: 0 0.75px 2px rgba(85,85,85,0.25);
 }
 
 .main-nav-header {
@@ -184,6 +238,7 @@ hgroup {
 
 .main-link {
   margin: 0 0 0 0.5rem;
+  color: rgb(66, 101, 24);
 }
 
 .main-nav-quick-icons {
@@ -191,34 +246,51 @@ hgroup {
 }
 
 .main-nav-quick-icons > button {
-  height: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.05rem;
+  width: 2.05rem;
+  border: 2px solid rgba(85,85,85,0.25);
+  border-radius: 50%;
+  box-shadow: 0 0.5px 1px rgb(201,201,201);
+  padding: 0;
+  color: rgb(85,85,85);
+  background-color: rgb(255,255,255);
 }
 
-/* add sizing for icon-wide and icon-circle classes */
+.main-nav-quick-icons > button.icon-wide {
+  width: 5rem;
+  border-radius: 15px;
+}
+
+.icon-wide > i {
+  padding-right: 0.25rem;
+}
 
 .main-nav-tabs > button {
-  /* min-width: 6rem; */
-  /* test actual text with and without min-width */
+  min-width: 6rem;
   height: 3rem;
   margin-right: 1rem;
   border: 0;
+  border-radius: 1px;
   padding: 0 0.5px;
-  background-color: white;
+  background-color: rgb(255,255,255);
 }
 
 .main-nav-tabs > button:hover {
-  background-color: cyan;
+  background-color: rgb(176,215,239);
 }
 
 .main-nav-tabs > .default-tab {
-  border-bottom: 3px solid cyan;
+  border-bottom: 3px solid rgb(176,215,239);
 }
 
 /* MAIN BODY GENERAL STYLES */
 
 .main-body-container {
-  border: 3rem solid blanchedalmond;
-  background-color: blanchedalmond;
+  border: 3rem solid rgb(197,197,197);
+  background-color: rgb(197,197,197);
 }
 
 .main-body-top {
@@ -238,8 +310,8 @@ hgroup {
 .info-card {
   width: 100%;
   height: 100%;
-  padding-bottom: 0.25rem;
   border-spacing: 0;
+  box-shadow: 0px 1px 4px rgba(85,85,85,0.25);
 }
 
 /* CHART CONTAINER STYLES */
@@ -277,7 +349,8 @@ hgroup {
 
 .divider-line {
   width: 100%;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid rgba(85,85,85,0.25);
+  box-shadow: 0 0.5px 1px rgba(85,85,85,0.25);
 }
 
 .divider-body > .left {
@@ -288,8 +361,28 @@ hgroup {
   margin-left: 0.5rem;
 }
 
-.center {
+.center-icon {
+  color: rgba(255, 255, 255, 0.8);
   line-height: normal;
+  font-size: 2rem;
+  font-variation-settings: 
+  'FILL' 1,
+  'wght' 300,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.image-container {
+  height: 100%;
+}
+
+.image-container > img {
+  /* width: 400px;
+  height: auto; */
+  /* width: 100%; */
+  height: 100%;
+  border-radius: 2px;
+  box-shadow: 0 0.75px 2px rgba(85,85,85,0.25);
 }
 
 /* SHARING CONTAINER STYLES */
@@ -300,8 +393,8 @@ hgroup {
 }
 
 .main-right .btn:hover {
-  color: dimgrey;
-  background-color: cyan;
+  color: rgb(255,255,255);
+  background-color: rgb(66,101,24);
 }
 
 .main-right .btn {
@@ -310,10 +403,12 @@ hgroup {
   width: 100%;
   height: 3rem;
   margin-bottom: 0.7rem;
-  color: white;
-  background-color: dimgrey;
+  border-radius: 2px;
+  color: rgb(85,85,85);
+  background-color: rgb(210,230,187);
   text-decoration: none;
   line-height: 3rem;
+  box-shadow: 0px 1px 4px rgba(85,85,85,0.25);
 }
 
 .fa {
@@ -346,33 +441,116 @@ th {
 
 .copy-row {
   display: flex;
-  padding: 0.25rem 0;
+  margin: 0.25rem 0;
+  box-shadow: 0px 1px 4px rgba(85,85,85,0.25);
+}
+
+.copy-fields,
+.copy-row > button {
+  padding: 0.75rem 1rem;
+  border: 0;
+  border-radius: 2px;
+  color: rgb(85,85,85);
+  font-size: small;
+}
+
+.copy-row > button {
+  color: rgb(255,255,255);
+  background-color: rgb(66, 101, 24);
+  text-transform: capitalize;
+}
+
+.copy-row > button:hover {
+  color: rgb(85,85,85);
+  background-color: rgb(210,230,187);
+}
+
+.last{
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 /* TABLE STYLES */
 
+.table-column-left {
+  width: 25%;
+  padding-left: 2rem;
+}
+
+.table-column-right {
+  padding-right: 2rem;
+}
+
 tbody {
-  background-color: white;
+  background-color: rgb(255,255,255);
 }
 
 th {
   height: 4rem;
-  background-color: darkgrey;
+  color: rgb(255,255,255);
+  background-color: rgb(66, 101, 24);
+}
+
+th.table-column-right {
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+th.table-column-left {
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
 }
 
 td {
-  border-bottom: 1px solid grey;
+  padding: 1rem 0;
 }
 
-.table-column-left {
-  padding-left: 1.5rem;
+tr {
+  position: relative;
+  z-index: 1;
 }
 
-.table-bottom-row {
+tr:before {
+  content: "";
+  position: absolute;
+  left: 2rem;
+  right: 2rem;
+  bottom: 0;
+  border-bottom: 1px solid rgb(201,201,201);
+  box-shadow: 0 0.5px 1px rgb(201,201,201);
+}
+
+tr.no-border:before {
   border-bottom: 0;
 }
 
-.text-and-icon {
-  /* display: flex; */
-  /* delete selector if not used for vertical centering */
+tr.no-border > .table-column-left {
+  border-bottom-left-radius: 2px;
+}
+
+tr.no-border > .table-column-right {
+  border-bottom-right-radius: 2px;
+}
+
+.table-icon-row {
+  display: flex;}
+
+.table-icon-row > i {
+  padding-right: 0.5rem;
+  color: firebrick;
+}
+
+.table-column-right > button {
+  display: flex;
+  align-items: center;
+  height: 2rem;
+  padding: 0.5rem 0.75rem 0.5rem 0.5rem;
+  border: 0;
+  border-radius: 2px;
+  color: rgb(85,85,85);
+  background-color: rgb(210,230,187);
+}
+
+.table-column-right i {
+  padding-right: 0.25rem;;
 }
