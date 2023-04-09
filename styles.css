@@ -81,7 +81,8 @@ nav button,
 .main-body-bottom,
 .socials-container,
 .links-container,
-.divider-body {
+.divider-body,
+.pie-chart-container {
   display: flex;
   justify-content: space-between;
 }
@@ -319,20 +320,18 @@ hgroup {
 .charts-left,
 .charts-right {
   justify-content: center;
+  position: relative
   /* height: 270px; */
 }
 
 .charts-left {
-  width: 60%
+  width: 60%;
+  margin-right: 3rem;
+  padding-bottom: 2.5rem;
 }
 
 .charts-right {
-  width: 40%
-}
-
-.charts-left > div {
-  display: flex;
-  justify-content: space-around;
+  /* width: 40% */
 }
 
 .charts-left button {
@@ -344,49 +343,12 @@ hgroup {
   width: 35%;
 }
 
-/* PIE CHARTS */
-
-.pie {
-  --percent: 60;
-  --border-thickness: 10px;
-  --chart-color: darkgoldenrod;
-  --w: 150px;
-  width: var(--w);
-  aspect-ratio: 1;
-  position: relative;
-  display: inline-grid;
-  margin: 5px;
-  place-content: center;
-  /* font-size: 25px; */
-  /* font-weight: bold; */
-  text-transform: uppercase;
-}
-.pie:before,
-.pie:after {
-  content: "";
+.chart-subtitles {
   position: absolute;
-  border-radius: 50%;
+  bottom: 0;
+  align-self: center;
+  padding-top: 2rem;
 }
-.pie:before {
-  inset: 0;
-  background:
-    radial-gradient(farthest-side,var(--chart-color) 98%,#0000) top/var(--border-thickness) var(--border-thickness) no-repeat,
-    conic-gradient(var(--chart-color) calc(var(--percent)*1%),#0000 0);
-  -webkit-mask:radial-gradient(farthest-side,#0000 calc(99% - var(--border-thickness)),#000 calc(100% - var(--border-thickness)));
-          mask:radial-gradient(farthest-side,#0000 calc(99% - var(--border-thickness)),#000 calc(100% - var(--border-thickness)));
-}
-.pie:after {
-  inset: calc(50% - var(--border-thickness)/2);
-  background: var(--chart-color);
-  transform: rotate(calc(var(--percent)*3.6deg)) translateY(calc(50% - var(--w)/2));
-}
-
-.charts-to-rotate {
-  /* transform: rotate(0.5turn); */
-}
-
-
-
 
 .divider-body {
   height: 0;
@@ -429,6 +391,70 @@ hgroup {
   border-radius: 2px;
   box-shadow: 0 0.75px 2px rgba(85,85,85,0.25);
 }
+
+/* PIE CHARTS */
+
+.full-circle {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  display: inline-grid;
+  margin: 5px;
+  border-radius: 50%;
+  place-content: center;
+  background-color: rgba(255,255,255,0.5);
+  box-shadow: 0 -0.75px 2px rgba(85,85,85,0.25);
+}
+
+.pie {
+  --percent: 60;
+  --border-thickness: 10px;
+  --chart-color: darkgoldenrod;
+  --w: 150px;
+  width: var(--w);
+  aspect-ratio: 1;
+  position: relative;
+  display: inline-grid;
+  margin: 5px;
+  place-content: center;
+}
+
+.pie:before,
+.pie:after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+}
+
+.pie:before {
+  inset: 0;
+  background:
+    radial-gradient(farthest-side,var(--chart-color) 98%,#0000) top/var(--border-thickness) var(--border-thickness) no-repeat,
+    conic-gradient(var(--chart-color) calc(var(--percent)*1%),#0000 0);
+  -webkit-mask:radial-gradient(farthest-side,#0000 calc(99% - var(--border-thickness)),#000 calc(100% - var(--border-thickness)));
+          mask:radial-gradient(farthest-side,#0000 calc(99% - var(--border-thickness)),#000 calc(100% - var(--border-thickness)));
+}
+
+.pie:after {
+  inset: calc(50% - var(--border-thickness)/2);
+  background: var(--chart-color);
+  transform: rotate(calc(var(--percent)*3.6deg)) translateY(calc(50% - var(--w)/2));
+}
+
+.charts-to-rotate {
+  transform: rotate(0.5turn);
+}
+
+.charts-to-rotate span {
+  transform: rotate(-0.5turn);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+
+
+
 
 /* SHARING CONTAINER STYLES */
 
