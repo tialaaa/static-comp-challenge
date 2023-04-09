@@ -99,7 +99,6 @@ nav {
 .nav-user-container {
   justify-content: center;
   padding-bottom: 1.75rem;
-  /* height: 10rem; */
 }
 
 .nav-user-container > img {
@@ -119,10 +118,6 @@ nav {
   border-top: 2px solid rgba(54, 54, 54, 0.5);
   box-shadow: 0 0.5px 2px rgba(54,54,54,0.5)
 }
-
-/* .nav-secondary-container {
-  height: 13.5rem;
-} */
 
 nav h5 {
   align-items: flex-start;
@@ -222,7 +217,7 @@ form {
 }
 
 .main-nav-header {
-  height: 9rem;
+  height: 9.5rem;
 }
 
 hgroup {
@@ -252,7 +247,7 @@ hgroup {
   align-items: center;
   height: 2.05rem;
   width: 2.05rem;
-  border: 2px solid rgba(85,85,85,0.25);
+  border: 1.5px solid rgba(85,85,85,0.25);
   border-radius: 50%;
   box-shadow: 0 0.5px 1px rgb(201,201,201);
   padding: 0;
@@ -262,7 +257,7 @@ hgroup {
 
 .main-nav-quick-icons > button.icon-wide {
   width: 5rem;
-  border-radius: 15px;
+  border-radius: 20px;
 }
 
 .icon-wide > i {
@@ -270,12 +265,11 @@ hgroup {
 }
 
 .main-nav-tabs > button {
-  min-width: 6rem;
   height: 3rem;
-  margin-right: 1rem;
+  margin-right: 3rem;
   border: 0;
   border-radius: 1px;
-  padding: 0 0.5px;
+  padding: 0 1px;
   background-color: rgb(255,255,255);
 }
 
@@ -320,18 +314,17 @@ hgroup {
 .charts-left,
 .charts-right {
   justify-content: center;
-  position: relative
-  /* height: 270px; */
+  position: relative;
+}
+
+.charts-right {
+  justify-content: flex-start;
 }
 
 .charts-left {
   width: 60%;
   margin-right: 3rem;
   padding-bottom: 2.5rem;
-}
-
-.charts-right {
-  /* width: 40% */
 }
 
 .charts-left button {
@@ -347,7 +340,14 @@ hgroup {
   position: absolute;
   bottom: 0;
   align-self: center;
-  padding-top: 2rem;
+  padding: 0.25rem 0.75rem;
+  border: 1px solid rgba(54,54,54,0.25);
+  border-radius: 20px;
+  color: rgb(85,85,85);
+  background-color: rgb(255,255,255);
+  box-shadow: 0 0.5px 1px rgb(54,54,54,0.25);
+  text-transform: uppercase;
+  font-size: small;
 }
 
 .divider-body {
@@ -380,13 +380,10 @@ hgroup {
 }
 
 .image-container {
-  height: 100%;
+  height: 85%;
 }
 
 .image-container > img {
-  /* width: 400px;
-  height: auto; */
-  /* width: 100%; */
   height: 100%;
   border-radius: 2px;
   box-shadow: 0 0.75px 2px rgba(85,85,85,0.25);
@@ -407,7 +404,7 @@ hgroup {
 }
 
 .pie {
-  --percent: 60;
+  --percent: 50;
   --border-thickness: 10px;
   --chart-color: darkgoldenrod;
   --w: 150px;
@@ -450,11 +447,6 @@ hgroup {
   text-align: center;
   text-transform: uppercase;
 }
-
-
-
-
-
 
 /* SHARING CONTAINER STYLES */
 
