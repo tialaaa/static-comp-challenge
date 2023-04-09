@@ -86,7 +86,7 @@ nav button,
 nav {
   flex: 0 0 12rem;
   padding-top: 1rem;
-  color: rgb(197,197,197);
+  color: rgb(255,255,255);
   background-color: rgb(85,85,85);
 }
 
@@ -108,16 +108,17 @@ nav {
 .nav-primary-container,
 .nav-secondary-container {
   justify-content: space-evenly;
-  height: 15rem;
+  height: 16rem;
 }
 
 .nav-secondary-container {
-  height: 13rem;
+  height: 13.5rem;
 }
 
 nav h5 {
   align-items: flex-start;
   padding-left: 1rem;
+  margin: 2em 0;
   /* adjust margin after choosing font */
 }
 
@@ -129,7 +130,7 @@ nav button {
   width: 100%;
   padding: 0.5rem 0 0.5rem 1rem;
   border: 0px;
-  color: rgb(197,197,197);
+  color: rgb(255,255,255);
   background-color: rgb(85,85,85);
 }
 
@@ -142,13 +143,9 @@ nav button.active {
 }
 
 nav button.active {
-  color: rgb(225,225,225);
-  background-color: rgb(115,146,78);
+  color: rgb(255,255,255);
+  background-color: rgb(66,101,24);
 }
-
-/* .check-box {
-  color: rgb(201,201,201);
-} */
 
 /* SEARCH BAR STYLES */
 
@@ -161,6 +158,23 @@ nav button.active {
   justify-content: center;
   width: 6rem;
   height: 100%;
+  color: rgb(85,85,85);
+  box-shadow: 0 0.5px 1px darkgray;
+}
+
+.search-icons-right {
+  display: flex;
+  height: 5rem;
+}
+
+.search-icons > i,
+.search-bar > i {
+  font-size: 1.75rem;
+}
+
+.search-bar > i {
+  padding: 0 0.5rem 0 1.5rem;
+  color: rgb(85,85,85);
 }
 
 .search-icons:hover {
@@ -169,8 +183,23 @@ nav button.active {
 }
 
 .search-bar {
-  width: 70%;
+  flex: 1;
   height: 100%;
+  box-shadow: 0 0.5px 1px darkgray;
+}
+
+form {
+  flex: 1;
+}
+
+#siteSearch {
+  width: 98%;
+  border: 0;
+  padding: 0.5rem;
+}
+
+#siteSearch:focus-visible {
+  outline: rgb(115,146,78) auto 1px;
 }
 
 /* MAIN PAGE NAV HEADER STYLES */
@@ -178,7 +207,7 @@ nav button.active {
 .main-nav-container {
   padding: 3rem;
   padding-bottom: 0;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid darkgrey;
 }
 
 .main-nav-header {
@@ -199,6 +228,7 @@ hgroup {
 
 .main-link {
   margin: 0 0 0 0.5rem;
+  color: rgb(66, 101, 24);
 }
 
 .main-nav-quick-icons {
@@ -212,8 +242,7 @@ hgroup {
 /* add sizing for icon-wide and icon-circle classes */
 
 .main-nav-tabs > button {
-  /* min-width: 6rem; */
-  /* test actual text with and without min-width */
+  min-width: 6rem;
   height: 3rem;
   margin-right: 1rem;
   border: 0;
@@ -236,6 +265,14 @@ hgroup {
   background-color: rgb(197,197,197);
 }
 
+.main-nav-container {
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+  /* remove extras once decided */
+}
+
 .main-body-top {
   height: 16rem;
   margin-bottom: 3rem;
@@ -253,8 +290,9 @@ hgroup {
 .info-card {
   width: 100%;
   height: 100%;
-  padding-bottom: 0.25rem;
   border-spacing: 0;
+  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 /* CHART CONTAINER STYLES */
@@ -292,7 +330,8 @@ hgroup {
 
 .divider-line {
   width: 100%;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid darkgrey;
+  box-shadow: 0 0.5px 1px darkgray;
 }
 
 .divider-body > .left {
@@ -303,13 +342,21 @@ hgroup {
   margin-left: 0.5rem;
 }
 
-.center {
+.center-icon {
+  color: rgb(85,85,85);
   line-height: normal;
+  font-size: 1.5rem;
+}
+
+.image-container {
+  height: 100%;
 }
 
 .image-container > img {
-  width: 400px;
-  height: auto;
+  /* width: 400px;
+  height: auto; */
+  /* width: 100%; */
+  height: 100%;
 }
 
 /* SHARING CONTAINER STYLES */
@@ -320,8 +367,8 @@ hgroup {
 }
 
 .main-right .btn:hover {
-  color: rgb(225,225,225);
-  background-color: rgb(115,146,78);
+  color: rgb(255,255,255);
+  background-color: rgb(66,101,24);
 }
 
 .main-right .btn {
@@ -334,6 +381,7 @@ hgroup {
   background-color: rgb(210,230,187);
   text-decoration: none;
   line-height: 3rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 .fa {
@@ -368,23 +416,16 @@ th {
   display: flex;
   padding: 0.25rem 0;
 }
+.copy-row > input,
+.copy-row > button {
+  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
+}
+
+.last {
+  padding-bottom: 0;
+}
 
 /* TABLE STYLES */
-
-tbody {
-  background-color: rgb(255,255,255);
-}
-
-th {
-  height: 4rem;
-  color: rgb(255,255,255);
-  background-color: rgb(115,146,78);
-}
-
-td {
-  border-bottom: 1px solid grey;
-  padding: 1rem 0;
-}
 
 .table-column-left {
   width: 25%;
@@ -395,11 +436,55 @@ td {
   padding-right: 2rem;
 }
 
-.table-bottom-row {
+tbody {
+  background-color: rgb(255,255,255);
+}
+
+th {
+  height: 4rem;
+  color: rgb(255,255,255);
+  background-color: rgb(66, 101, 24);
+  /* background-color: rgb(46,85,26); */
+}
+
+td {
+  padding: 1rem 0;
+}
+
+tr {
+  position: relative;
+  z-index: 1;
+}
+
+tr:before {
+  content: "";
+  position: absolute;
+  left: 2rem;
+  right: 2rem;
+  bottom: 0;
+  border-bottom: 1px solid rgb(201,201,201);
+  box-shadow: 0 0.5px 1px rgb(201,201,201);
+}
+
+tr.no-border:before {
   border-bottom: 0;
 }
 
-.text-and-icon {
-  /* display: flex; */
-  /* delete selector if not used for vertical centering */
+.table-icon-row {
+  display: flex;}
+
+.table-icon-row > i {
+  padding-right: 0.5rem;
+  /* color: rgb(85,85,85); */
+}
+
+.table-column-right > button {
+  display: flex;
+  align-items: center;
+  height: 2rem;
+  padding: 0.5rem;
+}
+
+.table-column-right i {
+  padding-right: 0.25rem;;
 }
